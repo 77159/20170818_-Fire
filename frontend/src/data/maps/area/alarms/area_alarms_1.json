@@ -1,0 +1,21 @@
+{
+	"title": "建筑楼层",
+	"columns": {
+		"one": "名称",
+		"two": "面积",
+		"three": "状态"
+	},
+	"list": [{
+		"name": "一层",
+		"area": "15000㎡",
+		"status": "正常",
+		"lonlat": "N/A",
+		"id": "N/A"
+	}, {
+		"name": "二层",
+		"unitType": "学校",
+		"status": "在线",
+		"lonlat": "N/A",
+		"id": "N/A"
+	}]
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>奎屯智慧消防-室外地图</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/map.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="css/maps/bmap.traffic.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/outdoor.css">
+</head>
+
+<body>
+    <header class="ui top">
+        <!--<div class="ui label large left">奎屯市
+             <div class="detail">2017-07-20 13:00 星期四 21~32℃ 晴 风力 1~2 级 风向 无持续风向微风</div>
+        </div>
+        <a class="ui label large float-right">返回主菜单 </a>-->
+    </header>
+    <div class="ui bottom container-center">
+        <div class="banner-left banner" id="leftBanner">
+            <div class="ui inverted labeled icon left block vertical sidebar borderless menu uncover visible" data-direction="left">
+                <a class="item" data-toggle="search">
+                    <div class="ui segment">
+                        <i class="search icon"></i>
+                        <p>搜索</p>
+                    </div>
+                </a>
+                <!-- <a class="item" data-toggle="items" data-itemsindex="0">
+                    <div class="ui segment">
+                        <h3>今日</h3>
+                        <h3>报警</h3>
+                    </div>
+                </a>
+                <div class="ui items item-highligth-list">
+                    <a class="fitting item">
+                        <div class="ui inverted segment">
+                            <p>火警</p>
+                            <h4 class="ui header">2</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>主机报警</p>
+                            <h4 class="ui header">2</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>水源异常</p>
+                            <h4 class="ui header">2</h4>
+                        </div>
+                    </a>
+                </div>
+                <a class="item" data-toggle="items" data-itemsindex="1">
+                    <div class="ui segment">
+                        <h3>月度</h3>
+                        <h3>统计</h3>
+                    </div>
+                </a>
+                <div class="ui items item-normal-list transition hidden">
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>火警</p>
+                            <h4 class="ui header">17</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>主机报警</p>
+                            <h4 class="ui header">1132</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>水源异常</p>
+                            <h4 class="ui header">12</h4>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+            <div class="side-search ui centered grid transition hidden">
+                <div class="column">
+                    <div class="ui transparent inverted icon input">
+                        <input type="text" placeholder="请输入您要搜索内容的关键字">
+                    </div>
+                    <i class="search icon ui inverted"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container-map" id="b-Map">
+        </div>
+        <div class="banner-right banner" id="rightBanner">
+            <div class="ui inverted labeled icon right block vertical sidebar borderless menu uncover visible" data-direction="right">
+                <a class="item" data-toggle="tools">
+                    <div class="ui segment">
+                        <i class="search icon"></i>
+                        <p>地图工具</p>
+                    </div>
+                </a>
+                <!-- <a class="item" data-toggle="items" data-itemsindex="2">
+                    <div class="ui segment">
+                        <h3>重点</h3>
+                        <h3>单位</h3>
+                    </div>
+                </a>
+                <div class="ui items transition visible item-normal-list">
+                    <a class="fitting item">
+                        <div class="ui segment" id="mainGov">
+                            <p>一级单位</p>
+                            <h4 class="ui header">17</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>二级单位</p>
+                            <h4 class="ui header">1132</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>三级单位</p>
+                            <h4 class="ui header">12</h4>
+                        </div>
+                    </a>
+                </div>
+                <a class="item" data-toggle="items" data-itemsindex="3">
+                    <div class="ui segment">
+                        <h3>消防</h3>
+                        <h3>水源</h3>
+                    </div>
+                </a>
+                <div class="ui items transition hidden item-normal-list">
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>市政给水</p>
+                            <h4 class="ui header">17</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>消防水池</p>
+                            <h4 class="ui header">1132</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>天然水源</p>
+                            <h4 class="ui header">12</h4>
+                        </div>
+                    </a>
+                </div>
+                <a class="item" data-toggle="items" data-itemsindex="4">
+                    <div class="ui segment">
+                        <h3>消防</h3>
+                        <h3>力量</h3>
+                    </div>
+                </a>
+                <div class="ui items transition hidden item-normal-list">
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>消防支队</p>
+                            <h4 class="ui header">17</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>联动单位</p>
+                            <h4 class="ui header">1132</h4>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+            <div class="side-tools ui labeled borderless icon menu transition hidden">
+                <a class="item">
+                    <div class="ui segment">
+                        <i class="gamepad icon"></i>
+                        <p>路况信息</p>
+                    </div>
+                </a>
+                <a class="item">
+                    <div class="ui segment">
+                        <i class="video camera icon"></i>
+                        <p>通行信息</p>
+                    </div>
+                </a>
+                <a class="item">
+                    <div class="ui segment">
+                        <i class="video camera icon"></i>
+                        <p>测距工具</p>
+                    </div>
+                </a>
+                <!-- <a class="item">
+                    <div class="ui segment">
+                        <i class="video camera icon"></i>
+                        <p>标记工具</p>
+                    </div>
+                </a> -->
+            </div>
+        </div>
+    </div>
+    <div class="ui attached message transition hidden right-Info-tbl">
+    </div>
+    <script id="template" type="x-tmpl-mustache">
+    </script>
+    <!-- build:js -->
+    <script src="libs/jquery-2.1.4.min.js"></script>
+    <script src="libs/semantic/semantic.min.js"></script>
+    <script src="libs/mustache.js"></script>
+    <script src="libs/lodash.min.js"></script>
+    <script src="js/config.js"></script>
+    <script id="headerTmpl" src="js/maps/temples.js"></script>
+    <script src="js/maps/base.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=jo2N0X0PdOeZVPURz2bXvpcO&s=1"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/TrafficControl/1.4/src/TrafficControl_min.js"></script>
+    <script src="libs/bmap.mearsure.js"></script>
+    <!-- <script src="libs/bmap.traffic.js"></script> -->
+    <script src="libs/bmap.custom.infowin.js"></script>
+    <script id="headerTmpl" src="js/maps/outside/temples.js"></script>
+    <script src="libs/echarts.common.min.js"></script>
+    <script type="text/javascript" src="js/maps/outside/bmap.js"></script>
+    <script type="text/javascript" src="js/maps/outside/init.js"></script>
+</body>
+
+</html>

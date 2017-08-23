@@ -1,0 +1,159 @@
+{
+  "head": "2017-07-20 13:00 星期四 21~32℃ 晴 风力 1~2 级 风向 无持续风向微风",
+  "planTypeData": [{
+    "id": 1,
+    "name": "预案类型1"
+  }, {
+    "id": 2,
+    "name": "预案类型2"
+  }, {
+    "id": 3,
+    "name": "预案类型3"
+  }],
+  "caseTypeData": [{
+    "id": 1,
+    "name": "案情类型1"
+  }, {
+    "id": 2,
+    "name": "案情类型2"
+  }, {
+    "id": 3,
+    "name": "案情类型3"
+  }],
+
+  "makeDate": [{
+    "id": 1,
+    "name": "制作时间1"
+  }, {
+    "id": 2,
+    "name": "制作时间2"
+  }, {
+    "id": 3,
+    "name": "制作时间3"
+  }],
+
+
+  "tableData": [{
+    "id": 1,
+    "num": 1,
+    "Numbering": "KTYA-05-001",
+    "type": "火灾救援",
+    "obj": "奎屯市电影院",
+    "class": "火灾",
+    "date": "2017-7-30",
+    "auditor": "审核人A",
+    "change": "2017-8-1"
+  }, {
+    "id": 2,
+    "num": 2,
+    "Numbering": "KTYA-05-002",
+    "type": "地震救援",
+    "obj": "奎屯市电影院",
+    "class": "地震",
+    "date": "2017-7-31",
+    "auditor": "审核人B",
+    "change": "2017-8-3"
+  }, {
+    "id": 3,
+    "num": 3,
+    "Numbering": "KTYA-05-003",
+    "type": "泥石流救援",
+    "obj": "奎屯市电影院",
+    "class": "泥石流",
+    "date": "2017-8-2",
+    "auditor": "审核人C",
+    "change": "2017-8-5"
+  }],
+
+  "leftBanner": [{
+    "id": 2,
+    "icon": 2,
+    "text": "消防",
+    "subtext": "预案",
+    "toggle": "items",
+    "itemsindex": 0,
+    "link": false,
+    "folder": false,
+    "itemshighlight": true
+  }],
+
+  "rightBanner": [{
+    "id": 2,
+    "icon": 5,
+    "text": "消防",
+    "subtext": "设施",
+    "link": false,
+    "folder": false,
+    "toggle": "items",
+    "itemsindex": 2,
+    "itemshighlight": false,
+    "content": [{
+      "id": 1,
+      "name": "报警主机",
+      "total": 1
+    }, {
+      "id": 2,
+      "name": "报警设备",
+      "total": 12
+    }, {
+      "id": 3,
+      "name": "电气火灾系统",
+      "total": 2
+    }, {
+      "id": 4,
+      "name": "水灭火系统",
+      "total": 12
+    }, {
+      "id": 5,
+      "name": "防排烟系统",
+      "total": 2
+    }, {
+      "id": 6,
+      "name": "疏散通道",
+      "total": 2
+    }]
+  }, {
+    "id": 3,
+    "icon": 6,
+    "text": "消防",
+    "subtext": "水源",
+    "link": false,
+    "folder": true,
+    "toggle": "items",
+    "itemsindex": 3,
+    "itemshighlight": false,
+    "content": [{
+      "id": 1,
+      "name": "市政给水",
+      "total": 85
+    }, {
+      "id": 2,
+      "name": "消防水池",
+      "total": 25
+    }, {
+      "id": 3,
+      "name": "天然水源",
+      "total": 5
+    }]
+  }, {
+    "id": 4,
+    "icon": 7,
+    "text": "消防",
+    "subtext": "力量",
+    "link": false,
+    "folder": true,
+    "toggle": "items",
+    "itemsindex": 4,
+    "itemshighlight": false,
+    "content": [{
+      "id": 1,
+      "name": "消防支队",
+      "total": 85
+    }, {
+      "id": 2,
+      "name": "联动单位",
+      "total": 25
+    }]
+  }]
+
+}

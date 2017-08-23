@@ -1,0 +1,122 @@
+{
+    "head": "2017-07-20 13:00 星期四 21~32℃ 晴 风力 1~2 级 风向 无持续风向微风",
+    "leftBanner": [
+    {
+        "id": 1,
+        "icon": 2,
+        "text": "实时",
+        "subtext": "报警",
+        "toggle": "items",
+        "itemsindex": 0,
+        "link": false,
+        "folder": false,
+        "itemshighlight": true,
+        "type": "warnings",
+        "content": [
+        {
+            "id": 1,
+            "name": "火警",
+            "total": 2
+        },
+        {
+            "id": 2,
+            "name": "主机报警",
+            "total": 2
+        },
+        {
+            "id": 3,
+            "name": "水源异常",
+            "total": 2
+        }]
+    },
+    {
+        "id": 2,
+        "icon": 3,
+        "text": "报警",
+        "subtext": "记录",
+        "link": false,
+        "folder": true,
+        "toggle": "items",
+        "type": "status",
+        "itemsindex": 1,
+        "itemshighlight": true,
+        "content": [
+        {
+            "id": 1,
+            "name": "火警",
+            "total": 2
+        },
+        {
+            "id": 2,
+            "name": "主机报警",
+            "total": 2
+        },
+        {
+            "id": 3,
+            "name": "水源异常",
+            "total": 2
+        }]
+    }],
+    "rightBanner": [
+    {
+        "id": 1,
+        "icon": 5,
+        "text": "单位",
+        "subtext": "详情",
+        "link": false,
+        "folder": false,
+        "toggle": "items",
+        "itemsindex": 2,
+        "type": "builds",
+        "itemshighlight": false,
+        "content": [
+        {
+            "id": 1,
+            "name": "建筑楼层",
+            "total": 75
+        },
+        {
+            "id": 2,
+            "name": "重点区域",
+            "total": 80
+        },
+        {
+            "id": 3,
+            "name": "主出入口",
+            "total": 60
+        },
+        {
+            "id": 4,
+            "name": "消防通道",
+            "total": 60
+        }]
+    },
+    {
+        "id": 2,
+        "icon": 6,
+        "text": "消防",
+        "subtext": "资源",
+        "link": false,
+        "folder": false,
+        "toggle": "items",
+        "type": "resources",
+        "itemsindex": 3,
+        "itemshighlight": true,
+        "content": [
+        {
+            "id": 1,
+            "name": "监控视频",
+            "total": 3
+        },
+        {
+            "id": 2,
+            "name": "消防水源",
+            "total": 5
+        },
+        {
+            "id": 3,
+            "name": "消防力量",
+            "total": 15
+        }]
+    }]
+}

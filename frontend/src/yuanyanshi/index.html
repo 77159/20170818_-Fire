@@ -1,0 +1,635 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>预案演示系统</title>
+    <!-- 样式设置 -->
+
+    <link href="lib/bootstrap.min.css" rel="stylesheet">
+    <!-- build:css -->
+    <link href="css/common.css" rel="stylesheet">
+    <!-- endbuild -->
+    <style type="text/css">
+    #panel-1 {
+        position: absolute;
+        bottom: 10%;
+        left: 2%;
+    }
+    #page2 {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="map-container">
+        <iframe id="page2" style="z-index:10;position:absolute;left:0;top:0;display:none;" height="100%" frameborder="0" scrolling="no" src=""></iframe>
+    </div>
+    <!-- 左边按钮列表 -->
+    <!-- <div class="btn-group-vertical tool-groups" data-toggle="buttons">
+        <div class="imgDiv" id="btnViewModel" data-viewmodel="3d"> <img class="imageIcon" src="./image/3d-n.png" /></div>
+        <div class="imgDiv" id="btnInfo" data-info="on"> <img class="imageIcon" src="./image/info-f.png" /></div>
+        <div class="imgDiv"><img id="btnAddTemper" class="on" src="./image/heat_on.png" /></div>
+        <div class="imgDiv" data-show="yes" id="btnSearchNavigation"><img src="./image/gps-f.png" /></div>
+    </div>
+    右侧按钮面板
+    <div class="div-group-vertical first">
+        <span data-toggle="collapse" style="cursor:pointer;" data-target="#names" aria-expanded="true" aria-controls="names">模拟火情</span>
+        <div id="names" class="div-group-highlight first collapse in">
+            <ul>
+                <li>训练楼</li>
+                <li>飞机</li>
+                <li>化工楼</li>
+                <li>弧罐</li>
+                <li>球罐</li>
+                <li>火幕</li>
+            </ul>
+        </div>
+    </div>
+    <div class="div-group-vertical second">
+        <span>基地监控</span>
+        <div class="div-group-highlight second">
+            <ul>
+                <li>视频</li>
+                <li>温度</li>
+            </ul>
+        </div>
+    </div>
+    底部弹窗
+    <div id="videoInfor" class="div-info-bottom" style="display: none;">
+        <button type="button" class="close">
+            <img src="image/close.png">
+        </button>
+        <div class="info-left">
+            <video loop controls webkit-playsinline="true">
+                <source src="vidio/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' ></source>
+            </video>
+        </div>
+        <div class="info-right">
+            <p><span>位置:&nbsp;&nbsp;</span><span class="name"></span></p>
+            <p><span>运转:&nbsp;&nbsp;</span><span>正常</span></p>
+            <p><span>负责人:&nbsp;&nbsp;</span><span>周小云</span></p>
+            <p><span>维护时间:&nbsp;&nbsp;</span><span>2016-09-30</span></p>
+        </div>
+    </div>
+    <div id="heatInfor" class="div-info-bottom second" style="display: none;">
+        <button type="button" class="close">
+            <img src="image/close.png">
+        </button>
+        <div class="info-left">
+           <img src="image/tmp-name.png"/>
+           <label class="temper">60℃</label>
+        </div>
+        <div class="info-right">
+            <p><span>位置:&nbsp;&nbsp;</span><span class="name"></span></p>
+            <p><span>警戒值:&nbsp;&nbsp;</span><span class="temper">60℃</span></p>
+            <p><span>设备运转:&nbsp;&nbsp;</span><span>正常</span></p>
+            <p><span>负责人:&nbsp;&nbsp;</span><span>周小云</span></p>
+            <p><span>维护时间:&nbsp;&nbsp;</span><span>2016-09-30</span></p>
+        </div>
+    </div>
+
+    <div id="modelInfor" class="div-info-bottom third" style="display: none;">
+        <button type="button" class="close">
+            <img src="image/close.png">
+        </button>
+        <div class="info-left">
+            <img src="image/room.png" style="width:90px;height:90px;" />
+        </div>
+        <div class="info-right">
+            <p><span>名称:&nbsp;&nbsp;</span><span class="name">训练楼</span></p>
+            <p><span>楼层:&nbsp;&nbsp;</span><span class="groupname">B1</span></p>
+            <p><span>负责人:&nbsp;&nbsp;</span><span>小云</span></p>
+            <p><span>电话:&nbsp;&nbsp;</span><span>010-58779844</span></p>
+        </div>
+    </div> -->
+
+     <!-- 左侧tabs面板 -->
+    <!-- <div id="tabsInfor" class="div-info-left">
+    </div>
+    <div class="tabsCollapse">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+    </div> -->
+    <script src="lib/fengmap.min.js"></script>
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/ParticleEngine.min.js"></script>
+    <script src="lib/fire.js"></script>
+    <script src="lib/fireMarker.min.js"></script>
+    <!-- build:js -->
+    <script src="js/pathAnim.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/layerGroup.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/route.js"></script>
+    <!-- endbuild -->
+
+    <script type="text/javascript">
+    var map, closeFrame,groupControl;
+    var fmapID = '90266';
+    var fireStatus = {};
+    var funcStatus = 0;  //记录当前操作状态的变量
+    var indoor = false;
+    var elements = [11,6,5,10,3,4,9];
+    var element = {};
+    element[11] = "训练楼";
+    element[6] = "化工装置";
+    element[5] = "飞机";
+    element[10] = "中控室";
+    element[4] = "球罐";
+    element[3] = "1000m³弧顶罐";
+    element[9] = "火幕墙";
+
+    var markDataUrl = 'data/temper.json'; //获取室内地图添加标注的数据文件地址
+    var tabsDataUrl = 'data/content.json';
+    var needTabs = true;
+
+    $(function() {
+
+        map = new fengmap.FMMap({
+            container: $('#map-container')[0],
+            mapServerURL: 'data/' + fmapID,
+            mapThemeURL: 'data/theme',
+            focusAlphaMode: false, //对不可见图层启用透明设置 默认为true
+            focusAnimateMode: false, //关闭聚焦层切换的动画显示
+            focusAlpha: 0.1, //对不聚焦图层启用透明设置，当focusAlphaMode = true时有效
+            viewModeAnimateMode: true, //开启2维，3维切换的动画显示
+            defaultScaleLevel: 3,
+            modelSelectedEffect: false,
+
+            defaultMinTiltAngle: 20,
+
+            key: '57c7f309aca507497d028a9c00207cf8',
+            appName: '预案演示',
+
+            defaultControlsPose: {
+                target: "11.657,50.000,18.970",
+                position: "-74.135,87.192,-173.723"
+            }
+        });
+
+        //打开地图数据
+        map.openMapById(fmapID); //sceneId
+        map.showCompass = true; //指南针
+
+        // global
+        window.glo = window.glo || {};
+
+        /////////////////////////////////
+        // 汽车动画相关内容
+
+        var anims = [];
+
+        /** 得到 JSON 数据 */
+        var data = $.getJSON('./data/animation.json', function (data) {
+            anims = data.animation;
+        });
+
+        function drawRoute(data, autoClear) {
+            var start = {
+                x: data.sx,
+                y: data.sy,
+                height: 1
+            };
+
+            var end = {
+                x: data.ex,
+                y: data.ey,
+                height: 1
+            };
+
+            drawLines(start, end, 1, 1, autoClear);
+
+            return lineObjects[lineObjects.length - 1];
+        }
+
+        /**
+         *  {
+         *      cars: []
+         *      lines: []
+         *      index: 0,
+         *      isOver: true
+         *  }
+         */
+        glo.teams = {};
+
+        function go(name, clearIndex) {
+
+            if (!glo.teams[name]) {
+                glo.teams[name] = {
+                    cars: [],
+                    lines: [],
+                    index: 0,
+                    _id: null
+                };
+            }
+
+            for (var i = glo.teams[name].index; i < anims.length; i++) {
+                if (name === anims[i].name) {
+                    var anim = anims[i];
+
+                    glo.teams[name].index = i;
+
+                    var line = drawRoute( anim, glo.teams[name].index === clearIndex );
+
+                    var vehicle = getVehicle(map);
+
+                    glo.teams[name].cars.push(vehicle);
+                    glo.teams[name].lines.push(line);
+
+                    var marker = addTextMarker(anim.des, anim.water);
+
+                    vehicle.add(marker);
+                    vehicle.marker = marker;
+                    // marker.setScale(100);
+                    marker.setPosition(0, 4, 0);
+
+                    drive({
+                        map: map,
+                        line: line,
+                        vehicle: vehicle,
+                        speed: anim.speed
+                    });
+
+                    glo.teams[name].index ++;
+
+                    glo.teams[name]._id = setTimeout(function () {
+                        if (glo.teams[name].index < anims.length) {
+                            go(name, clearIndex);
+                        }
+                    }, anim.interval * 1000)
+
+                    break;
+                }
+            }
+        }
+
+        glo.removeTeam = function (name) {
+            if (!glo.teams[name]) {return;}
+
+            glo.teams[name].cars.forEach( function (car) {
+                car.parent.remove(car);
+                car.geometry.dispose();
+            });
+
+            glo.teams[name].lines.forEach( function (l) {
+                l.dispose();
+            });
+
+            glo.teams[name].cars.length = 0;
+            glo.teams[name].lines.length = 0;
+            glo.teams[name].index = 0;
+
+            clearTimeout(glo.teams[name]._id);
+
+            glo.teams[name] = null;
+        };
+
+        glo.teamGo = function(name) {
+
+            // 先把之前的车与线删掉
+            if (name === '第一力量') {
+                for(var k in glo.teams) {
+                    glo.removeTeam(k);
+                }
+            }
+
+            // 三个车 走起
+
+            // (function () {
+                go(name, 1);
+            // })();
+
+        }
+
+        // 线的闪烁
+        var cnt = 0;
+        map.on('update', function(delta) {
+            cnt += delta * 4;
+            var val = Math.abs( Math.sin( cnt ) );
+
+            lineObjects.forEach(function (l) {
+
+                l.material.color.r = val * .6;
+                l.material.color.g = val * 1;
+
+            });
+        });
+
+
+        /////////////////////////////////
+
+        //加载模型完成事件
+        map.on('loadComplete', function() {
+            //$("#heatInfor").slideRightShow(2000);
+            //初始化搜索分析对象+路径分析对象
+            routeAnalyse.init(map);
+
+            // map.maxPolarAngle = 80;
+
+            sceneWorks();
+
+            // 火效果的初始化方法
+            fireInit();
+
+            // 训练楼火的效果
+            glo.buildingFire = new fire({
+                fireConfig: buildingFireConfig,
+                smokeConfig: buildingSmokeConfig
+            });
+
+            // 飞机火的效果
+            glo.planeFire = new fire({
+                fireConfig: planeFireConfig,
+                smokeConfig: planeSmokeConfig
+            });
+
+            // 化工楼火的效果
+            glo.huagongFire = new fire({
+                fireConfig: huagongFireConfig,
+                smokeConfig: huagongSmokeConfig
+            });
+
+            // 弧罐火的效果
+            glo.huguanFire = new fire({
+                fireConfig: huguanFireConfig,
+                smokeConfig: huguanSmokeConfig
+            });
+
+            // 球罐火的效果
+            glo.qiuguanFire = new fire({
+                fireConfig: qiuguanFireConfig,
+                smokeConfig: qiuguanSmokeConfig
+            });
+
+            // 火幕火的效果
+            glo.huomuFire = new fire({
+                fireConfig: huomuFireConfig,
+                smokeConfig: huomuSmokeConfig
+            });
+
+        });
+
+        // 处理场景
+        function sceneWorks() {
+            // 隐藏 Extent
+            var floor = fengmap.MapUtil.getObjectsByAlias(map, 1, 'extent')[0];
+            floor.visible = false;
+
+            // shadow
+            map.shadowEnabled = true;
+
+            var ms = map.mapTheme.models;
+            for (var i in ms) {
+                var itm = ms[i];
+                itm.castShadow = true;
+            }
+
+            // ambient light
+            // var am = new fm.AmbientLight(new fm.Color(0xffffee), .45);
+            // map.mapScene.getO3dScene().add(am);
+
+            /*
+            // 添加LightMap
+            var lightMap = fengmap.MapUtil.loadTexture('./data/90251/models/maps/floor_LightingMap.png');
+            console.log(lightMap);
+
+            var _id = -1;
+            var ground = null;
+
+            clearInterval(_id);
+            _id = setInterval(function() {
+                ground = map.getModelByName('fj12');
+                if (ground) {
+                    console.log(ground);
+                    clearInterval(_id);
+                    ground.material.lightMap = lightMap;
+                    ground.material.needsUpdate = true;
+                }
+            }, 0);
+            //*/
+        };
+
+        //点击地图事件
+        var isSelectImgMarker = false;
+
+        //点击地图事件
+        map.on('mapClickNode', function(event) {
+            //console.log(event);
+            if (!event.nodeType) return; //如果没选中模型
+
+            if (funcStatus == 1) {
+                if (event.nodeType == fengmap.FMNodeType.IMAGE_MARKER) {
+                    if(event.ID.indexOf('temper') == 0) showHeatWin(event);
+                    if(event.ID.indexOf('camera') == 0) showCameraWin(event);
+                    isSelectImgMarker = true;
+                }
+                if (event.nodeType == 100 && isSelectImgMarker) {
+                    isSelectImgMarker = false;
+                    return;
+                }
+                if (event.nodeType == 100 && elements.indexOf(parseInt(event.data_.fids))>=0) {
+                    console.log(event.data_.fids);
+                     var obj = {groupID:1,name:element[parseInt(event.data_.fids)]};
+                     showInfoWin(obj);
+                }
+                return;
+            } else if (funcStatus == 2 || funcStatus == 0) {
+                if (event.data_.fids && event.data_.fids == "11" && $("#page2").attr("src") == "") {
+                    $("#page2").css('display', 'block');
+                    $("#page2").attr("src", "index_1.html");
+                }
+                if (event.data_.fids && event.data_.fids == "11") {
+                    $("#page2").css('display', 'block');
+                }
+
+                try {
+                    $("#page2")[0].contentWindow.clearAll();
+                    $("#page2")[0].contentWindow.togo();
+                } catch(e) {
+                    
+                }
+
+                /*if (event.data_.fids && event.data_.fids == "11") {
+                    $("#page2").css('display', 'block');
+                    //暂停火的动画
+                    glo.buildingFire.stop();
+                    glo.planeFire.stop();
+                    glo.huagongFire.stop();
+                    glo.huguanFire.stop();
+                    glo.qiuguanFire.stop();
+                    glo.huomuFire.stop();
+                }*/
+                return;
+            } else if (funcStatus == 5) {
+
+                if (event.nodeType == fengmap.FMNodeType.MODEL || event.nodeType == 100) {
+                    // get height
+                    var height = new fm.Box3().setFromObject(event.o3d_).max.y;
+
+                    var coord = {
+                        x: event.mapCoord.x,
+                        y: event.mapCoord.y,
+                        height: height
+                    };
+                    var groupid = event.groupID;
+                    clearNaviLines();
+                    if (naviCoords.length == 0) {
+                        clearImgLayer();
+                    }
+
+                    naviCoords.push(coord);
+                    naviGids.push(groupid);
+
+                    if (naviCoords.length == 1) {
+                        addMarker(groupid, coord, true);
+                        $("#inputStart").val(event.name);
+                        startgroupid = naviGids[0];
+                        startpoint = naviCoords[0];
+                    }
+
+                    if (naviCoords.length == 2) {
+                        addMarker(groupid, coord, false);
+                        $("#inputEnd").val(event.name);
+                        endgroupid = naviGids[1];
+                        endpoint = naviCoords[1];
+
+                        drawLines(startpoint, endpoint, startgroupid, endgroupid);
+                    }
+
+                    if (naviCoords.length > 2) {
+                        naviCoords = [];
+                        naviGids = [];
+                    }
+                }
+            }
+        });
+
+        startFire = function(isStart) {
+            for (var i in fireStatus) {
+                i = parseInt(i);
+                isFire = fireStatus[i];
+                switch (i) {
+                    case 0:
+                        if (isFire && isStart)
+                            glo.buildingFire.start();
+                        break;
+                    case 1:
+                        if (isFire && isStart)
+                            glo.planeFire.start();
+                        break;
+                    case 2:
+                        if (isFire && isStart)
+                            glo.huagongFire.start();
+                        break;
+                    case 3:
+                        if (isFire && isStart)
+                            glo.huguanFire.start();
+                        break;
+                    case 4:
+                        if (isFire && isStart)
+                            glo.qiuguanFire.start();
+                        break;
+                    case 5:
+                        if (isFire && isStart)
+                            glo.huomuFire.start();
+                        break;
+                }
+            }
+        }
+
+        //关闭室内地图
+        closeFrame = function() {
+            $("#page2").css('display', 'none');
+
+            //开启之前已经开启火的动画
+            startFire(true);
+        }
+
+        //右边的工具条可收缩，收缩时改变下面面板的位置
+        $('#names').on('hidden.bs.collapse', function () {
+            // do something…
+            $(".div-group-vertical.second").css('top','114px');
+        })
+
+        $('#names').on('shown.bs.collapse', function () {
+            // do something…
+            $(".div-group-vertical.second").css('top','314px');
+        })
+
+        //控制建筑物起火和灭火的方法
+        $(".div-group-highlight.first ul li").on('click', function() {
+            var index = $(".div-group-highlight.first ul li").index($(this));
+            if (!glo) return;
+
+            var isFire = false;
+
+            if ($(this).hasClass('on')) {
+                $(this).removeClass('on');
+                isFire = false;
+            } else {
+                $(this).addClass('on');
+                isFire = true;
+            }
+
+            fireStatus[index] = isFire;
+
+            switch (index) {
+                case 0:
+                    if (isFire)
+                        glo.buildingFire.start();
+                    else
+                        glo.buildingFire.stop();
+                    break;
+                case 1:
+                    if (isFire)
+                        glo.planeFire.start();
+                    else
+                        glo.planeFire.stop();
+                    break;
+                case 2:
+                    if (isFire)
+                        glo.huagongFire.start();
+                    else
+                        glo.huagongFire.stop();
+                    break;
+                case 3:
+                    if (isFire)
+                        glo.huguanFire.start();
+                    else
+                        glo.huguanFire.stop();
+                    break;
+                case 4:
+                    if (isFire)
+                        glo.qiuguanFire.start();
+                    else
+                        glo.qiuguanFire.stop();
+                    break;
+                case 5:
+                    if (isFire)
+                        glo.huomuFire.start();
+                    else
+                        glo.huomuFire.stop();
+                    break;
+            }
+
+            //改变温度的状态
+            var heatVisible = $(".div-group-highlight.second ul li").eq(1).hasClass("on");
+            var name = $(this).text();
+            //cosole.log(name);
+            if(heatVisible) {
+                setTimeout(function(){
+                    changeHeatMarkerImg(name,isFire);
+                },2000);
+            }
+        });
+    });
+    </script>
+</body>
+
+</html>

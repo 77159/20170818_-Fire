@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>奎屯智慧消防-室外地图</title>
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/map.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/indoor.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <header class="ui top">
+        <!--<div class="ui label large left">奎屯市
+         <div class="detail">2017-07-20 13:00 星期四 21~32℃ 晴 风力 1~2 级 风向 无持续风向微风</div>
+    </div>-->
+        <a class="ui label large float-right">返回主菜单 </a>
+    </header>
+    <div class="ui bottom container-center">
+        <div class="banner-left banner" id="leftBanner">
+            <div class="ui inverted labeled icon left block vertical sidebar borderless menu uncover visible" data-direction="left">
+                <a class="item search" data-toggle="search">
+                    <div class="ui segment">
+                        <i class="search icon"></i>
+                        <p>搜索</p>
+                    </div>
+                </a>
+                <a class="item open open1">
+                    <div class="ui segment">
+                        <p>打开/关闭</p>
+                        <p>视屏窗口</p>
+                    </div>
+                </a>
+                <a class="item open" href="map-outside.html">
+                    <div class="ui segment">
+                        <p>返回全市</p>
+                        <p>地图</p>
+                    </div>
+                </a>
+                <a class="item open" href="map-area.html">
+                    <div class="ui segment">
+                        <p>返回周边</p>
+                        <p>地图</p>
+                    </div>
+                </a>
+                <!-- <a class="item" data-toggle="items" data-itemsindex="0">
+                <div class="ui segment">
+                    <h3>今日</h3>
+                    <h3>报警</h3>
+                </div>
+            </a>
+            <div class="ui items item-highligth-list">
+                <a class="fitting item">
+                    <div class="ui inverted segment">
+                        <p>火警</p>
+                        <h4 class="ui header">2</h4>
+                    </div>
+                </a>
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>主机报警</p>
+                        <h4 class="ui header">2</h4>
+                    </div>
+                </a>
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>水源异常</p>
+                        <h4 class="ui header">2</h4>
+                    </div>
+                </a>
+            </div>
+            <a class="item" data-toggle="items" data-itemsindex="1">
+                <div class="ui segment">
+                    <h3>月度</h3>
+                    <h3>统计</h3>
+                </div>
+            </a>
+            <div class="ui items item-normal-list transition hidden">
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>火警</p>
+                        <h4 class="ui header">17</h4>
+                    </div>
+                </a>
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>主机报警</p>
+                        <h4 class="ui header">1132</h4>
+                    </div>
+                </a>
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>水源异常</p>
+                        <h4 class="ui header">12</h4>
+                    </div>
+                </a>
+            </div> -->
+            </div>
+            <div class="side-search ui centered grid transition hidden">
+                <div class="ui search column">
+                    <div class="ui transparent inverted icon input">
+                        <input type="text" placeholder="请输入您要搜索内容的关键字">
+                        <!-- <i class="search icon"></i> -->
+                    </div>
+                    <i class="search icon ui inverted"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container-map" id="f-Map">
+            <div class="label-ctrl-btn"> <img src="images/marker/label.png" width='42px' height='42px' /> </div>
+            <!-- 视频长弹框 start -->
+            <div class="video-list ui transition hidden">
+                <img src="close.png" class="video-list-right-close">
+                <div class="video-list-table-box">
+                    <p class="video-list-title">
+                        <span class="video-list-title-left">
+                            <select class="ui dropdown" id='floorDrop'>
+                                <option value="B1">B1</option>
+                                <option value="F1">F1</option>
+                                <option value="F2">F2</option>
+                                <option value="F3">F3</option>
+                                <option value="F4">F4</option>
+                                <option value="F5">F5</option>
+                            </select>
+                        </span>
+                        <div class="ui inverted icon input">
+                            <input type="text" placeholder="请输入您要搜索内容的关键字" id="search" class="video-list-search-input">
+                            <i class="search icon" id="iconSearch"></i>
+                        </div>
+                    </p>
+                    <div class="video-table-box">
+                        <table class="video-table" width="256" height="195">
+                            <thead>
+                                <tr>
+                                    <th>监控编号</th>
+                                    <th>监控名称</th>
+                                    <th>楼层</th>
+                                </tr>
+                            </thead>
+                            <tbody>                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 视频单独块 -->
+                <div class="video-box-model-case">
+                    <div class="video-box-model"><video loop controls webkit-playsinline="true">
+                            <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' ></source>
+                            </video></div>
+                </div>
+                <!-- 视频单独块 end-->
+                <div class="ui eight width  aligned padded grid video-box">
+                    <div class="row">
+                        <div class=" column">
+                            <div>
+                            <video loop controls webkit-playsinline="true">
+                            <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' ></source>
+                            </video>
+                            </div>
+                        </div>
+                        <div class=" column">
+                            <div><video loop controls webkit-playsinline="true">
+                            <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' ></source>
+                            </video></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" column">
+                            <div><video loop controls webkit-playsinline="true">
+                            <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' ></source>
+                            </video></div>
+                        </div>
+                        <div class=" column">
+                            <div><video loop controls webkit-playsinline="true">
+                            <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' ></source>
+                            </video></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 视频长弹框 end -->
+            <!-- 点击查看，弹出短视频框 start -->
+            <div class="video-view-box">
+                <i class="close icon video-view-box-btn"></i>
+                <div class="video-view-title">
+                    <div class="item">查看视频</div>
+                </div>
+                <div class="video-view-content" data-type="goverments">
+                </div>
+            </div>
+            <!-- 点击查看，弹出短视频框 end -->
+        </div>
+        <div class="banner-right banner" id="rightBanner">
+            <div class="ui inverted labeled icon right block vertical sidebar borderless menu uncover visible" data-direction="right">
+                <!--<a class="item" data-toggle="tools">
+                <div class="ui segment">
+                    <i class="search icon"></i>
+                    <p>地图工具</p>
+                </div>
+            </a>-->
+                <!-- <a class="item" data-toggle="items" data-itemsindex="2">
+                <div class="ui segment">
+                    <h3>重点</h3>
+                    <h3>单位</h3>
+                </div>
+            </a>
+            <div class="ui items transition visible item-normal-list">
+                <a class="fitting item">
+                    <div class="ui segment" id="mainGov">
+                        <p>一级单位</p>
+                        <h4 class="ui header">17</h4>
+                    </div>
+                </a>
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>二级单位</p>
+                        <h4 class="ui header">1132</h4>
+                    </div>
+                </a>
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>三级单位</p>
+                        <h4 class="ui header">12</h4>
+                    </div>
+                </a>
+            </div>
+            <a class="item" data-toggle="items" data-itemsindex="3">
+                <div class="ui segment">
+                    <h3>消防</h3>
+                    <h3>水源</h3>
+                </div>
+            </a>
+            <div class="ui items transition hidden item-normal-list">
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>市政给水</p>
+                        <h4 class="ui header">17</h4>
+                    </div>
+                </a>
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>消防水池</p>
+                        <h4 class="ui header">1132</h4>
+                    </div>
+                </a>
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>天然水源</p>
+                        <h4 class="ui header">12</h4>
+                    </div>
+                </a>
+            </div>
+            <a class="item" data-toggle="items" data-itemsindex="4">
+                <div class="ui segment">
+                    <h3>消防</h3>
+                    <h3>力量</h3>
+                </div>
+            </a>
+            <div class="ui items transition hidden item-normal-list">
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>消防支队</p>
+                        <h4 class="ui header">17</h4>
+                    </div>
+                </a>
+                <a class="fitting item">
+                    <div class="ui segment">
+                        <p>联动单位</p>
+                        <h4 class="ui header">1132</h4>
+                    </div>
+                </a>
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="ui attached message transition hidden right-Info-tbl">
+    </div>
+    <script id="template" type="x-tmpl-mustache">
+    </script>
+    <script type="text/javascript" src="libs/fengmap.min-v2.0.20.js"></script>
+    <!-- build:js -->
+    <script src="libs/jquery-2.1.4.min.js"></script>
+    <script src="libs/semantic/semantic.min.js"></script>
+    <script src="libs/mustache.js"></script>
+    <script src="libs/lodash.min.js"></script>
+    <script src="js/config.js"></script>
+    <script id="headerTmpl" src="js/maps/temples.js"></script>
+    <script src="js/maps/base.js"></script>
+    <!-- endbuild -->
+    <script id="headerTmpl" src="js/maps/indoor/temples.js"></script>
+    <script type="text/javascript" src="js/maps/indoor/init.js"></script>
+    <script type="text/javascript" src="js/maps/indoor/fmap.js"></script>
+</body>
+
+</html>

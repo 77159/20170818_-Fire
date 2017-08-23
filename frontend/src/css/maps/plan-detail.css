@@ -1,0 +1,871 @@
+ul {
+    list-style: none;
+    /* margin-left: 60px; */
+}
+
+li {
+    position: relative;
+}
+
+table {
+    border-collapse: collapse !important;
+}
+
+.current {
+    display: none;
+}
+
+.banner-content-box {
+    background-color: rgba(19, 41, 81, 1);
+    /* width: calc(100% - 179px); */
+    width: -moz-calc(100% - 179px);
+    /* width: -webkit-calc(100% - 179px); */
+    height: calc(99% - 20px);
+    position: absolute;
+    left: 90px;
+    right: 20px;
+}
+
+.container-center .banner-content {
+    /* width: 2000px; */
+    height: 100%;
+    background: #091E45;
+    /*  max-width: 1410px;
+   overflow-x: scroll; */
+}
+
+::-webkit-scrollbar {
+    background: #fff;
+}
+
+.container-center .banner-content .title {
+    /* width: 97%; */
+    height: 2rem;
+    background: #53627D;
+    /* margin-left: 20px; */
+    line-height: 2rem;
+    /* 修改 */
+    color: #42FFF9;
+}
+
+.container-center .banner-content .title .title-number {
+    color: #fff;
+}
+
+.container-center .banner-content .title .title-left {
+    padding: 0 12px 0 16px;
+}
+
+.container-center .banner-content .title .title-right {
+    padding-right: 18px;
+}
+
+
+.process {
+    overflow: hidden;
+}
+
+.container-center .banner-content .process li {
+    color: #fff;
+    float: left;
+    cursor: pointer;
+    /* margin-left: 20px; */
+    padding: 20px;
+}
+
+.container-center .banner-content .process li.process-zoo-box {
+    padding: 20px 0 0 0;
+}
+
+.process li .zoo {
+    color: #42FFF9;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.process li .num {
+    color: #42FFF9;
+    font-size: 32px;
+    font-weight: bold;
+    background: #223558;
+    padding: 10px 180px 10px 25px;
+    border-radius: 3px;
+}
+
+.process li .num.zoo-one-num {
+    display: inline-block;
+    width: 253px;
+    height: 58px;
+    margin-top: -14px;
+    padding-top: 20px;
+}
+
+.process li .one .text {
+    background: #2C7289;
+    padding: 7px 15px 7px 15px;
+    float: right;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+.process li .one .positive {
+    position: absolute;
+    left: 80px;
+    top: 9px
+}
+
+.process li .one .direction {
+    background: url("../../images/plan/arrow.png") no-repeat center;
+    width: 29px;
+    height: 28px;
+    color: #42FFF9;
+    float: right;
+    margin: 0 14px 0 10px;
+}
+
+.process li .two {
+    margin-left: -40px;
+}
+
+.process li .num.two-num {
+    width: 254px;
+    height: 61px;
+    display: inline-block;
+    margin-top: -22px;
+    padding-top: 20px;
+}
+
+.process li .two .text {
+    background: #2C7289;
+    padding: 7px 15px 7px 15px;
+    float: right;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+.process li .two .positive {
+    position: absolute;
+    left: 40px;
+    top: 3px
+}
+
+.process li .two .direction {
+    background: url("../../images/plan/arrow.png") no-repeat center;
+    width: 29px;
+    height: 28px;
+    color: #42FFF9;
+    float: right;
+    margin: 0 14px 0 10px;
+}
+
+.process li .three {
+    margin-left: -40px;
+}
+
+.process li .three .num {
+    padding: 10px 83px 10px 25px;
+}
+
+.process li .three .text {
+    background: #2C7289;
+    padding: 7px 15px 7px 15px;
+    float: right;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+.process li .three .positive {
+    position: absolute;
+    left: 40px;
+    top: 3px
+}
+
+.process li .three .direction {
+    background: url("../../images/plan/arrow.png") no-repeat center;
+    width: 29px;
+    height: 28px;
+    float: right;
+    margin: 0 14px;
+}
+
+.process li .four {
+    margin-left: -40px;
+}
+
+.process li .four .num {
+    padding: 10px 83px 10px 25px;
+}
+
+.process li .four .text {
+    text-align: center;
+    background: #2C7289;
+    padding: 7px 5px 7px 10px;
+    float: right;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+.process li .four .positive {
+    position: absolute;
+    left: 40px;
+    top: 3px
+}
+
+.process li .four .direction {
+    background: url("../../images/plan/arrow.png") no-repeat center;
+    width: 29px;
+    height: 28px;
+    float: right;
+    margin: 0 14px;
+}
+
+.process li .five {
+    margin-left: -40px;
+}
+
+.process li .five .num {
+    padding: 10px 83px 10px 25px;
+}
+
+.process li .five .text {
+    text-align: center;
+    background: #2C7289;
+    padding: 7px 15px 7px 15px;
+    float: right;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+.process li .five .positive {
+    position: absolute;
+    left: 40px;
+    top: 3px
+}
+
+.process li .five .direction {
+    background: url("../../images/plan/arrow.png") no-repeat center;
+    width: 29px;
+    height: 28px;
+    float: right;
+    margin-left: 30px;
+}
+
+.process li .six .text {
+    background: #2C7289;
+    padding: 7px 15px 7px 15px;
+    float: right;
+    border-radius: 3px;
+    margin-top: -15px;
+    /*  margin-right: -200px; */
+}
+
+.container-center .banner-content .process li.six-box{
+    padding-left:0;
+    padding-right: 0;
+}
+
+
+/*表格1*/
+
+.banner-content .process_detail {
+    margin-left: 20px;
+    width: 20%;
+    color: #fff;
+    height: 75%;
+}
+
+.banner-content .process .one-box {
+    margin-top: -6px;
+}
+
+.banner-content .process_detail .one {
+    color: #fff;
+    height: 100%;
+    overFlow-x: hidden;
+    border: 1px solid #42FFF9;
+    width: 530px;
+}
+
+.banner-content .process_detail .one .ui.table.power-table,
+.banner-content .process_detail .one .ui.table.power-table thead,
+.banner-content .process_detail .one .ui.table.power-table thead tr,
+.banner-content .process_detail .one .ui.table.power-table tbody,
+.banner-content .process_detail .one .ui.table.power-table tbody tr {
+    width: 400px;
+    margin-left: 0px;
+}
+
+.banner-content .process_detail .steps-btns {
+    width: 530px;
+}
+.banner-content .steps-btns span {
+    display: inline-block;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 20px;
+    color: #fff;
+    width: 253px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #42FFF9;
+    cursor: pointer;
+}
+
+.banner-content .process_detail span:nth-of-type(2) {
+    float: right;
+}
+
+.banner-content .process_detail .text {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.banner-content .process_detail .one tbody tr {
+    padding:7px 0;
+    display: inline-block;
+    width: 517px;
+    border-bottom: 1px solid #49618A;
+}
+
+.banner-content .process_detail .one td {
+    text-align: center;
+    width: 400px;
+}
+
+/*.banner-content .process_detail td:nth-of-type(1):after {
+    content:"|";
+    display: inline-block;
+    width: 1px;
+    background: #fff;
+}*/
+
+.banner-content .process_detail .one td:nth-of-type(1) {
+    width: 20%;
+    border-right: 1px solid #fff;
+}
+
+.banner-content .process_detail .one td:nth-of-type(2) {
+    /* width: 80%; */
+}
+
+.banner-content .process_detail .one .four_line td {
+    border-right: 1px solid #fff;
+}
+
+.banner-content .process_detail .one th {
+    display: inline-block;
+    width: 517px;
+    text-align: center !important;
+    text-decoration: underline;
+    background: #195480 !important;
+    color: #42FFF9 !important;
+    cursor: pointer !important;
+}
+
+.banner-content .process_detail .one table {
+    color: #fff;
+    background: #102E65;
+}
+
+.banner-content .process_detail .one tr:nth-of-type(2n) {
+    background: #1C396D;
+}
+
+
+/*表格2-1*/
+
+.banner-content .process_detail .two {
+    color: #fff;
+    height: 100%;
+    overFlow-x: hidden;
+    border: 1px solid #42FFF9;
+    width: 530px;
+}
+
+.banner-content .process_detail .two .two_one thead tr {
+    display: inline-block;
+    width: 180%;
+    background-color: #195480;
+}
+
+.banner-content .process_detail .two tbody .head-t {
+    border-right: 1px solid #fff;
+    display: inline-block;
+    width: 20%;
+    height: 520px;
+    text-align: center;
+    padding-top: 250px;
+    background: #102E65;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.banner-content .process_detail .two tbody .head-t.head-margin,
+.banner-content .process_detail .two tbody .head-c.head-margin{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.banner-content .process_detail .two tbody .head-tt {
+    border-right: 1px solid #fff;
+    display: inline-block;
+    width: 20%;
+    height: 400px;
+    text-align: center;
+    padding-top: 200px;
+    background: #102E65;
+    color: #fff;
+}
+
+.banner-content .process_detail .two tbody .head-c {
+    /* background: #195480; */
+    display: inline-block;
+    width: 80%;
+    float: right;
+    height: 520px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.banner-content .process_detail .two tbody .head-c table tbody tr td{
+    border-right: 1px solid #fff;
+    padding-left: 0;
+    padding-right: 0;
+    width: 20%;
+}
+
+.banner-content .process_detail .two tbody .head-c table tbody tr td.no-border{
+    border-right: 0;
+}
+
+.banner-content .process_detail .two tbody .head-cc {
+    /* background: #195480; */
+    display: inline-block;
+    width: 80%;
+    float: right;
+    height: 400px;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.banner-content .process_detail .two tbody .head-cc table tbody tr td {
+    border-bottom: 1px solid #49618A;
+    width: 20%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    border-right: 1px solid #fff;
+}
+
+.banner-content .process_detail .two tbody .head-c tr {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.ui.table.two_one thead tr th.two_one_width1{
+    width: 16%;
+}
+
+.ui.table.two_one thead tr th.two_one_width2{
+    width: 15%;
+}
+
+
+
+/* 表格样式 start*/
+
+.ui.table.two_one thead th {
+    background-color: #195480;
+    color: #fff;
+}
+
+.banner-content .process_detail .two table {
+    color: #fff;
+    background: #102E65;
+}
+
+.banner-content .process_detail .two tr:nth-of-type(2n) {
+    background: #1C396D;
+}
+
+.banner-content .ui.table.one_three .second-table tbody tr {
+    width: 100%;
+}
+/* 表格样式 end*/
+
+
+/*2-2*/
+
+.banner-content .process_detail .two .two_two thead tr {
+    background-color: #195480;
+}
+.banner-content .process_detail .two .two_two thead tr th:nth-of-type(1),
+,.banner-content .process_detail .two .two_two tbody tr td:nth-of-type(1) {
+    width: 20%;
+}
+.banner-content .process_detail .two .two_two thead tr th:nth-of-type(2),
+.banner-content .process_detail .two .two_two tbody tr td:nth-of-type(2) {
+    width: 80%;
+}
+.banner-content .process_detail .two .two_two thead tr th.center-th,
+.ui.table.two_one thead tr th.center-th
+{
+    text-align: center;
+    text-decoration: underline;
+    color: #42FFF9;
+    cursor: pointer;
+    width: 530px;
+}
+.banner-content .process_detail .two .two_two thead tr th {
+    color: #fff;
+}
+
+.banner-content .process_detail .two tbody .head-c tr {
+    border-bottom: 1px solid #49618A;
+    padding-top: 7px;
+    padding-bottom:7px;
+}
+
+.banner-content .process_detail .two .two_two tbody tr td {
+    color: #fff;
+    border-bottom: 1px solid #49618A;
+}
+
+.banner-content .process_detail .two .two_two tbody tr td:nth-of-type(1) {
+    border-right: 1px solid #fff;
+}
+
+.ui.table.two_two thead th {
+    background-color: #195480;
+}
+
+
+/*表格3-1*/
+
+.banner-content .process_detail .three {
+    color: #fff;
+    width: 530px;
+    height: 100%;
+    overFlow-x: hidden;
+    border: 1px solid #42FFF9;
+}
+
+.banner-content .process_detail .three .three_one tr:nth-of-type(2) td {
+    border: 1px solid #fff;
+}
+
+.banner-content .process_detail .three .three_one tr:nth-of-type(2n) {
+    text-align: center;
+    background: #1C396D;
+    color: #fff;
+}
+
+.banner-content .process_detail .three .three_one tr:nth-of-type(n) {
+    text-align: center;
+    background: #102E65;
+    color: #fff;
+}
+
+.banner-content .process_detail .three .three_two tr {
+    text-align: center;
+    background: #1C396D;
+    color: #fff;
+}
+
+.banner-content .process_detail .three .three_two tr:nth-of-type(2) td {
+    border: 1px solid #fff;
+    width: 50%;
+}
+
+.banner-content .process_detail .three .three_two tr:nth-of-type(3) td {
+    border: 1px solid #fff;
+}
+
+.banner-content .process_detail .three .three_three tr {
+    text-align: center;
+    background: #1C396D;
+    color: #fff;
+}
+
+.banner-content .process_detail .three .three_three tr td {
+    border: 1px solid #fff;
+}
+.banner-content .process_detail .three .three_three .center-td,
+.banner-content .process_detail .three .three_one .center-td,
+.banner-content .process_detail .one_three .center-td,
+.banner-content .process_detail .three .center-td,
+.banner-content .process_detail .four .center-td,
+.banner-content .process_detail .five .center-td{
+    text-decoration: underline;
+    color: #42FFF9;
+    cursor:pointer;
+    font-weight: 700;
+    background: #195480;
+}
+
+/*表格4-1*/
+
+.banner-content .process_detail .four {
+    color: #fff;
+    width: 530px;
+    height: 100%;
+    overFlow-x: hidden;
+    border: 1px solid #42FFF9;
+}
+
+.banner-content .process_detail .four .four_one tr:nth-of-type(2n+1) {
+    text-align: center;
+    background: #102E65;
+    color: #fff;
+}
+
+.banner-content .process_detail .four .four_one tr:nth-of-type(2n) {
+    text-align: center;
+    background: #1C396D;
+    color: #fff;
+}
+
+.banner-content .process_detail .four .four_one tr:nth-of-type(2n) td {
+    border: 1px solid #fff;
+    width: 50%;
+}
+
+
+/*表格5-1*/
+
+.banner-content .process_detail .five {
+    color: #fff;
+    width: 530px;
+    height: 100%;
+    overFlow-x: hidden;
+    border: 1px solid #42FFF9;
+}
+
+.banner-content .process_detail .five .five_one tr:nth-of-type(2n+1) {
+    text-align: center;
+    background: #102E65;
+    color: #fff;
+}
+
+.banner-content .process_detail .five .five_one tr:nth-of-type(2n) {
+    text-align: center;
+    background: #1C396D;
+    color: #fff;
+}
+
+.banner-content .process_detail .five .five_one tr:not(:first-child) td {
+    border: 1px solid #fff;
+}
+
+.banner-content .process_detail .five .five_one tr:not(:first-child) td:nth-of-type(1) {
+    width: 103px;
+}
+
+/*地图显示*/
+
+.hide {
+    display: none;
+}
+
+#map_wrapper .map-container{
+    position: absolute;
+    top: 130px;
+    left: 570px;
+    right: 20px;
+    width: 63%;
+    height: 66%;
+    color: #fff;
+}
+
+#map_wrapper .map-container .map-div {
+    width: 100%;
+    height:100%;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgb(6,157,195);
+}
+
+#map_wrapper .map-container .full-screen {
+    background-image: url('../../images/marker/label.png');
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left:10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+#map_wrapper .map-container .map-div iframe {
+    width: calc(100% - 2px);
+    height: 99.7%;
+    left:1px;
+    top:1px;
+    border: none;
+}
+
+.map-container .button {
+    /* background: #0a6cd6; */
+    height: 10%;
+    padding-top: 20px;
+}
+
+.map-container .button span {
+    display: inline-block;
+    border: 1px solid #42FFF9;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    width: 100px;
+    height: 35px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.map-container .button span:hover,
+.map-container .button span.active {
+    background: #124362;
+}
+
+
+/**********************去掉百度地图logo*****************************/
+
+/* 屏幕小于宽小于1600 */
+
+@media screen and (max-width:1400px) {
+    .plan-detail-box{
+        min-width: 1400px;
+        overflow-x:scroll;
+    }
+}
+
+@media screen and (max-width:1600px) and (min-width:779px) {
+    .process{
+        padding-left: 20px;
+    }
+    .container-center .banner-content .process li.process-zoo-box {
+        padding: 15px 0 0 0;
+    }
+    #map_wrapper .map-container{
+        top:121px;
+    }
+
+    /* 预案流程1 */
+    .process li .one .text {
+        padding: 3px 8px 3px 8px;
+    }
+
+    .process li .num.zoo-one-num {
+        width: 211px;
+        height: 50px;
+    }
+
+    .process li .num.zoo-one-num {
+        padding-top: 15px;
+    }
+
+    /* 预案流程2 */
+    .process li .two .text {
+        padding: 3px 8px 3px 8px;
+    }
+
+    .process li .num.two-num {
+        width: 211px;
+        height: 52px;
+        padding-top: 16px;
+    }
+
+    .process li .two .direction{
+        margin: -7px 14px 0 10px;
+    }
+
+    /* 预案流程3 */
+    .process li .three .text {
+        padding: 3px 8px 3px 8px;
+    }
+
+    .process li .three .num {
+        padding: 10px 68px 0px 25px;
+    }
+
+    .process li .three .direction{
+        margin-top: -8px;
+    }
+
+    /* 预案流程4 */
+    .process li .four .text {
+        padding: 3px 8px 3px 8px;
+    }
+
+    .process li .four .num {
+        padding: 10px 83px 0px 25px;
+    }
+
+    .process li .four .direction{
+        margin-top: -8px;
+    }
+
+    /* 预案流程5 */
+
+    .process li .five .text{
+        padding: 3px 8px 3px 8px;
+    }
+
+    .process li .five .num {
+        padding: 10px 67px 0px 25px;
+    }
+
+    /* 预案流程6 */
+
+    .process li .six .text{
+        padding: 3px 8px 3px 8px;
+    }
+
+    .process li .six .num {
+        padding: 10px 67px 0px 25px;
+    }
+    .container-center .banner-content .process li.six-box{
+        padding-left:0;
+        padding-right: 0;
+    }
+}
+
+.plan-detail-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.plan_process{
+    min-width: 1400px;
+}
+
+
+/* 鼠标移入左右栏按钮效果 */
+
+.container-center .ui.sidebar.menu .items .ui.segment:hover {
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .08);
+}
+
+.anchorBL {
+    display: none;
+}
+.anchorBL img {
+    width: 0;
+    height: 0;
+}
+
+.BMap_cpyCtrl.BMap_noprint.anchorBL {
+    display: none;
+}

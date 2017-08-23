@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>消防预案列表</title>
+    <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/map.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/plan-list.css">
+</head>
+<body>
+
+<!--头部-->
+<header class="ui top">
+    <!--<div class="ui label large left">奎屯市
+        <div class="detail">2017-07-20 13:00 星期四 21~32℃ 晴 风力 1~2 级 风向 无持续风向微风</div>
+    </div>
+    <a class="ui label large float-right">返回主菜单 </a>-->
+</header>
+
+<div class="ui bottom container-center">
+    <!--左边-->
+    <div class="banner-left banner" id="leftBanner">
+        <div class="ui inverted labeled icon left block vertical sidebar borderless menu uncover visible" data-direction="left">
+        </div>
+    </div>
+    <!--<div class="container-map" id="b-Map">
+    </div>-->
+    <!--右边-->
+    <!-- <div class="banner-right banner" id="rightBanner">
+        <div class="ui inverted labeled icon right block vertical sidebar borderless menu uncover visible"
+             data-direction="right">
+            <a class="item open open1" data-toggle="search">
+            </a>
+        </div>
+    </div> -->
+
+    <!--中间-->
+    <div class="banner-content banner">
+    <div class="banner-content-container">
+        <div class="content_top">
+            <div class="column search">
+                <div class="ui inverted icon input">
+                    <input type="text" placeholder="请输入您要搜索内容的关键字" id="search">
+                    <i class="search icon" id="iconSearch"></i>
+                </div>
+            </div>
+            <div class="column select" id="planType">
+                <!--<select class="ui dropdown">
+                    <option value="">请选择预案类型</option>
+                    <option value="1">预案类型1</option>
+                    <option value="0">预案类型2</option>
+                </select>-->
+            </div>
+            <div class="column select" id="caseType">
+                <!--<select class="ui dropdown">
+                    <option value="">请选择案情类型</option>
+                    <option value="0">案情类型1</option>
+                    <option value="0">案情类型2</option>
+                </select>-->
+            </div>
+            <div class="column select" id="makeDate">
+                <!--<select class="ui dropdown">
+                    <option value="">请选择制作时间</option>
+                    <option value="1">制作时间1</option>
+                    <option value="0">制作时间2</option>
+                </select>-->
+            </div>
+        </div>
+        <div class="content_detail">
+            <table class="ui very basic inverted selectable padded table">
+                <thead>
+                <tr class="table-title">
+                    <th>预案编号</th>
+                    <th>预案类型</th>
+                    <th>预案对象</th>
+                    <th>案情分类</th>
+                    <th>制作日期</th>
+                    <th>审核人</th>
+                    <th>修订日期</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                <!--<tr class='tr'>
+                    <td>1</td>
+                    <td>KTYA-05-001</td>
+                    <td>其它救援预案</td>
+                    <td>奎屯市电影院</td>
+                    <td>恐怖事件</td>
+                    <td>2017-7-30</td>
+                    <td>审核人A</td>
+                    <td>2017-8-1</td>
+                </tr>-->
+                </tbody>
+            </table>
+        </div>
+
+         <div class="content_foot">
+            <span>上一页</span>
+            <span>1</span>
+            <span>下一页</span>
+        </div>
+
+
+    </div>
+    </div>
+</div>
+<!--
+<div class="ui attached message transition hidden right-Info-tbl">
+</div>
+-->
+
+
+<!--<script id="template" type="x-tmpl-mustache">
+</script>-->
+
+<!-- build:js -->
+<script src="libs/jquery-2.1.4.min.js"></script>
+<script src="libs/semantic/semantic.min.js"></script>
+<script src="libs/mustache.js"></script>
+<script src="libs/lodash.min.js"></script>
+<script src="js/config.js"></script>
+<script id="headerTmpl" src="js/plan/temples.js"></script>
+<script src="js/plan/base.js"></script>
+<!-- endbuild -->
+<!--<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=5qpWM9TrdQhT55ju8CSA9hDtpWNUFKGx&s=1"></script>
+<script type="text/javascript" src="js/maps/outside/bmap.js"></script>-->
+</body>
+</html>

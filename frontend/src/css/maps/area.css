@@ -1,0 +1,157 @@
+.left-back {
+    font-weight: normal;
+}
+
+.container-center .ui.sidebar.menu .item.left-templ-back {
+    min-width: 78px;
+    min-height: 78px;
+    bottom: 0;
+    position: absolute;
+}
+/* map-area.html中左边最底部返回按钮样式 start */
+.container-center .ui.sidebar.menu .item.back-btn{
+    position: absolute;
+    bottom: 0;
+}
+.container-center .ui.sidebar.menu .item.back-btn .ui h3{
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+}
+/* map-area.html中左边最底部返回按钮样式 end */
+
+/* 单位详情弹框 start */
+
+.ui.table.area-unit-detail {
+    margin-top: 0;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.area-unit-detail-box {
+    display: none;
+    position: absolute;
+    right: 95px;
+    top: 44px;
+    padding: 0;
+    margin: 0;
+    width: 286px;
+    background-color: rgba(18, 65, 153, 0.9);
+    color: #fff;
+}
+
+.ui.table.area-unit-detail tbody tr td:nth-child(1) {
+    text-align: right;
+}
+
+.ui.table.area-unit-detail tbody tr td:nth-child(1) span {
+    padding-left: 12px;
+}
+
+.ui.basic.table.area-unit-detail tbody tr td {
+    height: 39px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.29);
+    padding: 10px 10px 10px 0;
+}
+
+.ui.table.area-unit-detail thead {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.ui.table.area-unit-detail thead tr th {
+    color: #fff;
+}
+
+.ui.table.area-unit-detail thead tr th i {
+    float: right;
+}
+
+.area-unit-detail-title {
+    height: 34px;
+    line-height: 34px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.area-unit-detail-title i {
+    float: right;
+}
+
+.ui.structured.table.area-unit-detail {
+    border-collapse: inherit;
+}
+
+.area-unit-detail-title {
+    padding: 0 12px;
+}
+
+.area-unit-detail-box {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.area-unit-detail-box .area-nit-detail-btn-width {
+    margin-right: 30px;
+}
+
+.area-unit-detail-box .area-unit-detail-btn-box .ui.button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(0, 255, 247);
+    color: #fff;
+}
+
+.area-unit-detail tbody tr td .ui.button.area-nit-detail-btn-width {
+    margin: 0 28px;
+}
+
+.ui.basic.table.area-unit-detail tbody tr td.area-unit-detail-list {
+    padding-left: 19px;
+}
+
+.area-unit-detail tbody tr td .ui.button.area-nit-detail-btn-width {
+    width: 86px;
+}
+
+.ui.basic.table.area-unit-detail tbody .area-unit-detail-btn-box td {
+    padding-right: 0;
+    margin-right: 30px;
+}
+
+
+/* 单位详情弹框 end */
+
+/* 右侧点击查看，弹出视频框 */
+
+.right-watch-video-box{
+    width: 324px;
+    height: 246px;
+    background:rgba(18, 65, 153, 0.9);
+    position: absolute;
+    bottom: 10px;
+    left: 95px;
+    display: none;
+}
+/* 查看视频 所在标题样式 */
+.right-watch-video-title{
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    background:rgb(19, 40, 81);
+    padding-left: 20px;
+}
+.right-watch-video-box video {
+    width: 324px;
+    height: 247px;
+    margin-top: -45px;
+}
+.right-watch-c{
+    position: absolute;
+   right:10px;
+   top: 8px;
+   z-index: 30;
+}
+
+.ui.message table tbody tr .right-watch-video u,
+.right-watch-video-box .right-watch-c{
+    cursor: pointer;
+}

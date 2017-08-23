@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=0.33">
+    <meta charset="UTF-8">
+    <title>基本地图示例</title>
+    <!-- 样式设置 -->
+    <link href="lib/bootstrap.min.css" rel="stylesheet">
+     <!-- build:css -->
+    <link href="css/common.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div id="map-container"></div>
+    <!-- 返回组 -->
+    <div class="btn-group-vertical tool-groups" data-toggle="buttons">        
+        <div class="imgDiv" id="btnViewModel" data-viewmodel="3d"> <img class="imageIcon" src="image/3d-n.png" /></div>
+        <div class="imgDiv" id="btnInfo" data-info="on"> <img class="imageIcon" src="./image/info-f.png" /></div>        
+        <!-- <div class="imgDiv"><img id="btnAddTemper" class="on" src="./image/heat_on.png" /></div> -->
+        <div class="imgDiv" data-show="yes" id="btnSearchNavigation"><img src="./image/gps-f.png" /></div>
+        <div class="imgDiv" id="btnReturn"><img src="./image/return.png" /></div>
+    </div>
+
+    <!-- 右侧按钮面板 -->
+    <div class="div-group-vertical third">
+        <span>模拟火情</span>
+        <div class="div-group-highlight first">
+            <ul>
+                <li>灾情点</li>
+            </ul>
+        </div>
+    </div>
+    <div class="div-group-vertical second">
+        <span>基地监控</span>
+        <div class="div-group-highlight second">
+            <ul>
+                <li>视频</li>
+                <li>温度</li>                
+            </ul>
+        </div>
+    </div>
+
+    <!-- 右下方弹窗 -->
+    <div id="videoInfor" class="div-info-bottom" style="display: none;">
+        <button type="button" class="close">
+            <img src="image/close.png">
+        </button>
+        <div class="info-left">
+            <!-- <video loop controls webkit-playsinline="true">
+                <source src="vidio/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></source>
+            </video> -->
+        </div>
+        <div class="info-right">
+            <p><span>位置:&nbsp;&nbsp;</span><span class="name"></span></p>
+            <p><span>运转:&nbsp;&nbsp;</span><span>正常</span></p>
+            <p><span>负责人:&nbsp;&nbsp;</span><span>周小云</span></p>
+            <p><span>维护时间:&nbsp;&nbsp;</span><span>2016-09-30</span></p>
+        </div>
+    </div>
+    <div id="heatInfor" class="div-info-bottom second" style="display: none;">
+        <button type="button" class="close">
+            <img src="image/close.png">
+        </button>
+        <div class="info-left">
+           <img src="image/tmp-name.png"/>
+           <label class="temper">60℃</label>
+        </div>
+        <div class="info-right">
+            <p><span>位置:&nbsp;&nbsp;</span><span class="name"></span></p>            
+            <p><span>警戒值:&nbsp;&nbsp;</span><span class="temper">60℃</span></p>
+            <p><span>设备运转:&nbsp;&nbsp;</span><span>正常</span></p>
+            <p><span>负责人:&nbsp;&nbsp;</span><span>周小云</span></p>
+            <p><span>维护时间:&nbsp;&nbsp;</span><span>2016-09-30</span></p>
+        </div>
+    </div>
+    <div id="modelInfor" class="div-info-bottom third" style="display: none;">
+        <button type="button" class="close">
+            <img src="image/close.png">
+        </button>
+        <div class="info-left">
+            <img src="image/room.png" style="width:90px;height:90px;" />
+        </div>
+        <div class="info-right">
+            <p><span>名称:&nbsp;&nbsp;</span><span class="name">训练楼</span></p>
+            <p><span>楼层:&nbsp;&nbsp;</span><span class="groupname">B1</span></p>
+        </div>
+    </div>
+    <script src="lib/fengmap.min.js"></script>
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/fireMarker.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>    
+    <!-- build:js -->    
+    <script src="js/pathAnim.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/layerGroup.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/route.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+
+
+    fm.AnimationClip.findByName = function ( objectOrClipArray, name ) {
+
+        console.log('kkkk');
+
+        var clipArray = objectOrClipArray;
+
+        if ( ! Array.isArray( objectOrClipArray ) ) {
+
+            var o = objectOrClipArray;
+            clipArray = o.geometry && o.geometry.animations || o.animations;
+
+        }
+
+        for ( var i = 0; i < clipArray.length; i ++ ) {
+
+            console.log(clipArray[ i ].name);
+
+            if ( clipArray[ i ].name === name ) {
+
+                return clipArray[ i ];
+
+            }
+
+        }
+
+        return null;
+
+    }
+
+
+    //定义全局map变量
+    var map, routeAnalyse,groupControl;
+    var fmapID = '90267';
+    var heatmapInstance = null,
+        heatmapObj = {},
+        heatmapInstances = {};    //热力图实例
+    var funcStatus = 0;          //记录当前的操作状态
+    var indoor = true;
+
+    var markDataUrl = 'data/indoor/temper.json'; //获取室内地图添加标注的数据文件地址
+    var needTabs =false;
+    $(function() {
+        //楼层控制控件配置参数
+        var ctlOpt = new fengmap.controlOptions({
+            position: fengmap.controlPositon.LEFT_BOTTOM,
+            showBtnCount: 3
+        });
+        
+        routeAnalyse = fengmap.FMNaviAnalyser.create({}); //初始化路线对象
+
+        map = new fengmap.FMMap({
+            container: $('#map-container')[0], //渲染dom
+            mapServerURL: './data/indoor/' + fmapID, //地图数据位置
+            mapThemeURL: './data/indoor/theme', //主题数据位置
+            focusAlphaMode: true, //对不可见图层启用透明设置 默认为true
+            focusAnimateMode: false, //开启聚焦层切换的动画显示
+            focusAlpha: 0.3, //对不聚焦图层启用透明设置，当focusAlphaMode = true时有效
+            viewModeAnimateMode: false, //开启2维，3维切换的动画显示
+            defaultScaleLevel: 3,
+
+            defaultVisibleGroups: [2],
+            defaultFocusGroup: 2,
+            modelSelectedEffect: false,
+
+            compassOffset: [10, 20], //初始指南针的偏移量
+            compassSize: 48, //指南针大小默认配置
+            moveToAnimateMode: false, //开启moveTo动画效果
+            defaultGroupSpace: 20,      //设置楼层间隔
+            key: '57c7f309aca507497d028a9c00207cf8',
+            appName: '预案演示',
+        });
+
+        //打开地图数据
+        map.openMapById(fmapID); //sceneId
+
+        //////////////////////////////////
+        // added fireman animation
+
+        function drawRoute(data, autoClear) {
+            var start = {
+                x: data.sx,
+                y: data.sy,
+                height: 1
+            };
+
+            var end = {
+                x: data.ex,
+                y: data.ey,
+                height: 1
+            };
+
+            var l = drawLines(start, end, 2, 2, autoClear);
+
+            return lineObjects[lineObjects.length - 1];
+        }
+
+        function splitClip(clip, ranges, frameCount, fps) {
+            fps = fps || 25;
+
+            var res = [];
+
+            for (var i = 0; i < ranges.length; i++) {
+                // range : {name: range:[]}
+                var range = ranges[i].range;
+                var name = ranges[i].name;
+
+                var sub = range[1] - range[0];
+                var duration = sub / 25;
+
+                var tracks = clip.tracks.slice();
+
+                var step = 3;
+                // split tracks
+                for (var j = 0; j < tracks.length; j++) {
+                    var track = tracks[j];
+
+                    if (track instanceof fm.VectorKeyframeTrack) {
+                        step = 3;
+                        track = new fm.VectorKeyframeTrack(track.name, track.times, track.values);
+                    } else if (track instanceof fm.QuaternionKeyframeTrack) {
+                        step = 4;
+                        track = new fm.QuaternionKeyframeTrack(track.name, track.times, track.values);
+                    }
+                    tracks[j] = track;
+
+                    var from = Math.floor((range[0] / frameCount) * track.times.length);
+                    var to = Math.min(frameCount, Math.ceil((range[1] / frameCount) * track.times.length));
+
+                    // split times
+                    track.times = track.times.slice(from, to);
+
+                    var _first = track.times[0];
+                    track.times.forEach((v, k) => {
+                        track.times[k] -= _first;
+                    });
+
+                    // values
+                    track.values = track.values.slice(from * step, to * step);
+                }
+
+                res.push(new fm.AnimationClip(name, duration, tracks));
+            }
+
+            return res;
+        }
+
+        window.splitClip = splitClip;
+
+        var manLoaded = false;
+        var tanLoaded = false;
+        var theMan = null;
+        var theTan = null;
+
+        function manWorks(man, cb, data) {
+
+            var parent = new fm.Object3D();
+            parent.add(man);
+
+            map.getFMGroup(2).o3d_.add(parent);
+
+            if (man._type_ == 'man') {
+                var marker = addTextMarker(data.name, data.heart, '心率: ', true);
+
+                parent.add(marker);
+                
+                marker.setPosition(0, 2.3, 0);
+            }
+
+            var mixer = new fm.AnimationMixer(man);
+
+            var idle = mixer.clipAction(man.geometry.animations[0]);
+            var run = mixer.clipAction(man.geometry.animations[1]);
+
+            // var idle = mixer.clipAction('idle');
+            // var run = mixer.clipAction('run');
+
+            man.mx = mixer;
+
+            man.idle = function () {
+                if (!idle || !run) {return;}
+                man.mx.timeScale = 0.4;
+                idle.play();
+                run.stop();
+            }
+
+            man.run = function () {
+                if (!idle || !run) {return;}
+                man.mx.timeScale = 1;
+                idle.stop();
+                run.play();
+            }
+
+            // if (manLoaded && tanLoaded) {
+                man.run();
+                // theTan.run();
+            // }
+
+            function _update(d) {
+                mixer.update(d);
+            }
+
+            parent._stop = function () {
+                man.idle();
+            }
+
+            map.on('update', _update);
+
+            if (cb) {cb(parent);}
+        }
+
+        // var url = './data/runingman.js';
+        // var url = './data/fireman.js';
+        var url = './data/fireman/fireman.json';
+        var tanUrl = './data/fireman/firetan.json';
+        function loadFireman(data, cb) {
+            if (theMan) {
+                var _man = theMan.clone();
+                _man._type_ = 'man';
+                manWorks(_man, cb, data);
+
+                if (theTan) {
+                    var _tan = theTan.clone();
+                    _tan._type_ = 'tan';
+                    manWorks(_tan, cb, data);
+                }
+            } else {
+
+                // new fm.ObjectLoader().load( url, function ( loadedObject ) {
+                //         loadedObject.traverse( function ( child ) {
+                //             if ( child instanceof fm.SkinnedMesh ) {
+                //                 man = child;
+                //             }
+                //         } );
+
+                //         man.scale.setScalar(.03);
+
+                //         manWorks(man, cb, data);
+
+                //     });
+
+                
+                new fm.JSONLoader().load( url, function ( geo, mats ) {
+
+                    theMan = new fm.SkinnedMesh(geo, new fm.MultiMaterial(mats));
+                    theMan._type_ = 'man';
+
+                    // ** 要将 material.skinning = true 才能动画 **
+                    mats.forEach((m) => {
+                        m.color.setScalar(1);
+                        m.skinning = true;
+                    });
+
+                    // 切分动画 
+                    theMan.geometry.animations = splitClip(geo.animations[0], [{
+                        name: 'idle',
+                        range:[0, 19]
+                    }, {
+                        name: 'run',
+                        range: [30, 51]
+                    }], 51);
+
+                    theMan.scale.setScalar(1.2);
+
+                    manWorks(theMan, cb, data);
+
+                    manLoaded = true;
+
+                });
+
+                new fm.JSONLoader().load( tanUrl, function ( geo, mats ) {
+
+                    theTan = new fm.SkinnedMesh(geo, new fm.MultiMaterial(mats));
+
+                    theTan._type_ = 'tan';
+
+                    // ** 要将 material.skinning = true 才能动画 **
+                    mats.forEach((m) => {
+                        m.color.setScalar(1);
+                        m.skinning = true;
+                    });
+
+                    // 切分动画 
+                    theTan.geometry.animations = splitClip(geo.animations[0], [{
+                        name: 'idle',
+                        range:[0, 10]
+                    }, {
+                        name: 'run',
+                        range: [30, 51]
+                    }], 51);
+
+                    theTan.scale.setScalar(1.2);
+
+                    manWorks(theTan, cb, data);
+
+                    tanLoaded = true;
+
+                } );
+            }
+        }
+
+        var firemanData = null;
+
+        $.getJSON('./data/animation1.json', function (data) {
+            firemanData = data.animation;
+        });
+
+        window.glo = window.glo || {};
+
+        glo.mans = [];
+
+        var manIndex = 0;
+
+        function go() {
+
+            if (!firemanData) {
+                return;
+            }
+
+            if (manIndex === firemanData.length) {
+                manIndex = 0;
+                return;
+            }
+
+            var _data = firemanData[manIndex];
+
+            var line = drawRoute(_data, false);
+
+            loadFireman(_data, function (mesh) {
+
+                glo.mans.push(mesh);
+
+                drive({
+                    map: map,
+                    line: line,
+                    vehicle: mesh,
+                    rotateY: 0,
+                    positionY: .5,
+                    speed: _data.speed
+                });
+                
+            });
+
+            manIndex += 1;
+
+            setTimeout(function()  {
+                go();
+            }, _data.interval * 1000)
+
+
+        }
+
+        // 线的闪烁
+        var cnt = 0;
+        map.on('update', function(delta) {
+            cnt += delta * 4;
+            var val = Math.abs( Math.sin( cnt ) );
+
+            lineObjects.forEach(function (l) {
+
+                l.material.color.r = val * .6;
+                l.material.color.g = val * 1;
+
+            });
+        });
+
+        window.clearAll = function () {
+            glo.mans.forEach(function (man) {
+                if(man.parent) {
+                    man.parent.remove(man);
+                }
+
+                try {
+                    man.geometry.dispose();
+                    man.material.dispose();
+                    man.material.map.dispose();
+                } catch(e) {
+
+                }
+
+            });
+            glo.mans.length = 0;
+
+            lineObjects.forEach(function (l) {
+                l.dispose();
+            });
+        }
+
+        window.togo = function () {
+            setTimeout(function () {
+                go();
+            }, 600);
+        }
+
+        var isMapLoaded = false;
+
+        /////////////////////////////////
+        
+        map.on('loadComplete', function() {
+            //创建楼层，放大、缩小控件
+            groupControl = new fengmap.scrollGroupsControl(map, ctlOpt);
+
+
+            map.rotateAngle = 180;
+            map.tiltAngle = 77;
+
+            //初始化搜索分析对象+路径分析对象
+            routeAnalyse.init(map);
+
+           if (!isMapLoaded) {
+                togo()
+                isMapLoaded = true;
+           }
+
+            //动态修正数据中的label和facility显示过高的问题
+            // map.listGroups.forEach(function(val, i) {
+            //     var extent = fengmap.MapUtil.getObjectsByAlias(map, val.gid, 'extent')[0];
+            //     extent.scale.z = .2;
+            //     extent.position.y = 0;
+            //     var facilityLayer = fengmap.MapUtil.getLayerByAlias(map, val.gid, 'facility');
+            //     facilityLayer.o3d_.position.y = -3;
+            // });
+
+            //保持多层和3D显示一致
+            groupControl.onChange(function(groups,allLayer){
+                if(allLayer && map.viewMode == 'top') {
+                    $('#btnViewModel').trigger('click');
+                }
+            });                      
+        });
+
+        //显示指南针
+        map.showCompass = true;
+
+        //返回按钮
+        $('#btnReturn').on('click', function() {
+            parent.closeFrame();
+        })
+
+        //控制建筑物起火和灭火的方法
+        $(".div-group-highlight.first ul li").on('click', function() {
+            var index = $(".div-group-highlight.first ul li").index($(this));
+            var isFire = false;
+
+            if ($(this).hasClass('on')) {
+                $(this).removeClass('on');
+                isFire = false;
+            } else {
+                $(this).addClass('on');
+                isFire = true;
+            }
+
+            if(isFire) {
+                funcStatus = 6;
+            } else {
+                clearFireMarkers();
+                funcStatus = 0;
+            }
+        });
+
+        //点击地图事件
+        var isSelectImgMarker = false;
+        map.on('mapClickNode', function(event) {
+            console.log(event.eventInfo);
+            // if (!event.nodeType) return; //如果没选中模型
+
+            if (funcStatus == 1) { //点击查询
+                if (event.nodeType == fengmap.FMNodeType.IMAGE_MARKER && event.ID) {
+                    if(event.ID.indexOf('temper') == 0) showHeatWin(event);
+                    if(event.ID.indexOf('camera') == 0) showCameraWin(event);
+                    isSelectImgMarker = true;
+                }
+                if (event.nodeType == fengmap.FMNodeType.MODEL && isSelectImgMarker) {
+                    isSelectImgMarker = false;
+                    return;
+                }
+                if (event.nodeType == fengmap.FMNodeType.MODEL && event.typeID != 300000) {
+                    showInfoWin(event);
+                }
+                return;
+            } else if (funcStatus == 2 || funcStatus == 0) {
+                return;                
+            } else if (funcStatus == 5) { //路径规划
+
+                if (event.nodeType == fengmap.FMNodeType.MODEL) {
+                    // get height
+                    var height = new fm.Box3().setFromObject(event.o3d_).max.y;
+
+                    var coord = {
+                        x: event.mapCoord.x,
+                        y: event.mapCoord.y,
+                        height: height
+                    };
+                    var groupid = event.groupID;
+                    clearNaviLines();
+                    if (naviCoords.length == 0) {
+                        clearImgLayer();
+                    }
+
+                    naviCoords.push(coord);
+                    naviGids.push(groupid);
+
+                    if (naviCoords.length == 1) {
+                        addMarker(groupid, coord, true);
+                        $("#inputStart").val(event.name);
+                        startgroupid = naviGids[0];
+                        startpoint = naviCoords[0];
+                    }
+
+                    if (naviCoords.length == 2) {
+                        addMarker(groupid, coord, false);
+                        $("#inputEnd").val(event.name);
+                        endgroupid = naviGids[1];
+                        endpoint = naviCoords[1];
+
+                        drawLines(startpoint, endpoint, startgroupid, endgroupid);
+                    }
+                }
+            } else if(funcStatus == 6) { //动态添加火苗
+                addFireMarker(event);
+            }
+        });
+    });    
+    </script>    
+</body>
+
+</html>

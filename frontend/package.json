@@ -1,0 +1,34 @@
+{
+  "name": "project_kuitunxiaofang",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "b": "gulp",
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-cleanup": "^1.0.0",
+    "gulp-concat": "^2.0.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^3.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "latest",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "imagemin-pngcrush": "^3.0.0",
+    "imagemin-pngquant": "^4.1.0",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-copy": "0.0.2",
+    "del": "^2.2.0",
+    "babel-preset-es2015": "^6.5.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-load-plugins": "^1.1.0",
+    "run-sequence": "^1.1.5"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

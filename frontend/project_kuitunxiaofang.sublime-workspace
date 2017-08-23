@@ -1,0 +1,2654 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"defaul",
+				"defaultMarkers〔variable〕"
+			],
+			[
+				"infowi",
+				"infoWindow〔variable〕"
+			],
+			[
+				"getde",
+				"getDefaultIconByType〔function〕"
+			],
+			[
+				"infow",
+				"infoWindow〔variable〕"
+			],
+			[
+				"infowin",
+				"infoWindow"
+			],
+			[
+				"defau",
+				"defaultMarkers〔variable〕"
+			],
+			[
+				"defalut",
+				"defaultMarkers〔variable〕"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"defa",
+				"defaultMarkers〔variable〕"
+			],
+			[
+				"gov",
+				"goverments"
+			],
+			[
+				"has",
+				"hasClass〔function〕"
+			],
+			[
+				"tabl",
+				"tableNames〔variable〕"
+			],
+			[
+				"tab",
+				"tableNames〔variable〕"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"fmap",
+				"fmapDataStates"
+			],
+			[
+				"inclu",
+				"includeActions"
+			],
+			[
+				"incl",
+				"includeActions"
+			],
+			[
+				"fmapd",
+				"fmapDataCtrl"
+			],
+			[
+				"mapC",
+				"mapCanvasActions"
+			],
+			[
+				"mapcan",
+				"mapCanvasActions"
+			],
+			[
+				"U",
+				"UPDATE_OL_MAP"
+			],
+			[
+				"upda",
+				"updateOlMap"
+			],
+			[
+				"canv",
+				"canvasActionType"
+			],
+			[
+				"mapc",
+				"mapCanvasActions"
+			],
+			[
+				"ex",
+				"excludeAction"
+			],
+			[
+				"undo",
+				"undoableReducer"
+			],
+			[
+				"fmapthem",
+				"fmapThemeActions"
+			],
+			[
+				"picked",
+				"PICKED_PATH_ELEMENTS"
+			],
+			[
+				"MAP",
+				"MAP_MEARSURE_LENGTH"
+			],
+			[
+				"un",
+				"undoConfig"
+			],
+			[
+				"mapd",
+				"mapDataReducer"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"defalu",
+				"defaultLabelHeight"
+			],
+			[
+				"us",
+				"sidThemeUsed"
+			],
+			[
+				"labelh",
+				"labelHeis"
+			],
+			[
+				"defal",
+				"defaultModelHeight"
+			],
+			[
+				"groups",
+				"groupSpaceTxt"
+			],
+			[
+				"getloc",
+				"getLocalThemeData"
+			],
+			[
+				"loca",
+				"localStorageMa"
+			],
+			[
+				"loc",
+				"localStorageMa"
+			],
+			[
+				"getlo",
+				"getLocalFloorData"
+			],
+			[
+				"setl",
+				"setLocalFloorName"
+			],
+			[
+				"floo",
+				"floorName"
+			],
+			[
+				"setlo",
+				"setLocalMapId"
+			],
+			[
+				"setlocal",
+				"setLocalCacheId"
+			],
+			[
+				"fmm",
+				"fmMapDataVersion"
+			],
+			[
+				"fm",
+				"fmMapThemeStoreName"
+			],
+			[
+				"che",
+				"checkMapVersion"
+			],
+			[
+				"locals",
+				"localStorageKeys"
+			],
+			[
+				"floor",
+				"floorName"
+			],
+			[
+				"check",
+				"checkMapID"
+			],
+			[
+				"cac",
+				"cacheId"
+			],
+			[
+				"image",
+				"image"
+			],
+			[
+				"imag",
+				"image"
+			],
+			[
+				"cah",
+				"cacheId"
+			],
+			[
+				"map",
+				"mapId"
+			],
+			[
+				"fmda",
+				"fmapDataAPI"
+			],
+			[
+				"key",
+				"key"
+			],
+			[
+				"local",
+				"localStorageAPI"
+			],
+			[
+				"localc",
+				"localCacheId"
+			],
+			[
+				"flo",
+				"floorName"
+			],
+			[
+				"locl",
+				"localResp"
+			],
+			[
+				"setm",
+				"setMapCursorDefault"
+			],
+			[
+				"olm",
+				"olMap_"
+			],
+			[
+				"styleh",
+				"styleHeightError"
+			],
+			[
+				"poi",
+				"poiHeightError"
+			],
+			[
+				"polyg",
+				"polygonHeightError"
+			],
+			[
+				"wid",
+				"strokeWidthError"
+			],
+			[
+				"interac",
+				"interactions"
+			],
+			[
+				"requ",
+				"requestError"
+			],
+			[
+				"getm",
+				"getThemeByModeType"
+			],
+			[
+				"storet",
+				"storethemeFidApply"
+			],
+			[
+				"type",
+				"typeID"
+			],
+			[
+				"selec",
+				"selectedFeatures"
+			],
+			[
+				"data",
+				"data_"
+			],
+			[
+				"red",
+				"RE_DO"
+			],
+			[
+				"hed",
+				"HeadToolBar"
+			],
+			[
+				"escal",
+				"ESCALATOR"
+			],
+			[
+				"esc",
+				"escalator"
+			],
+			[
+				"defaultThe",
+				"defaultTheme"
+			],
+			[
+				"labelth",
+				"labelthemeTypeApply"
+			],
+			[
+				"storeth",
+				"storethemeTypeApply"
+			],
+			[
+				"traf",
+				"trafficManage"
+			],
+			[
+				"handlecl",
+				"handleCloseErrorDialog"
+			],
+			[
+				"emi",
+				"emitSelectedEvent"
+			],
+			[
+				"lay",
+				"layerType"
+			],
+			[
+				"stari",
+				"STAIR"
+			],
+			[
+				"stai",
+				"STAIR"
+			],
+			[
+				"ele",
+				"ELEMENT_TYPE"
+			],
+			[
+				"lif",
+				"lift"
+			],
+			[
+				"del",
+				"delGroupsDom"
+			],
+			[
+				"cur",
+				"curId"
+			],
+			[
+				"gett",
+				"getTrafficManage"
+			],
+			[
+				"err",
+				"error_message"
+			],
+			[
+				"group",
+				"groupID"
+			],
+			[
+				"img",
+				"imgUrl"
+			],
+			[
+				"delf",
+				"deSelFeatures"
+			],
+			[
+				"hand",
+				"handelRotateFeature"
+			],
+			[
+				"tra",
+				"transInteraction_"
+			],
+			[
+				"grou",
+				"groupID"
+			],
+			[
+				"traff",
+				"trafficId"
+			],
+			[
+				"visi",
+				"visible"
+			],
+			[
+				"this",
+				"this_"
+			],
+			[
+				"getpaht",
+				"getPathLineFeatureStyle"
+			],
+			[
+				"pathl",
+				"pathLine"
+			],
+			[
+				"selected",
+				"selectedFeatures"
+			],
+			[
+				"sta",
+				"stairLayer_"
+			],
+			[
+				"getpa",
+				"getPathLineFeatureStyle"
+			],
+			[
+				"lines",
+				"lineStyle"
+			],
+			[
+				"cav",
+				"canvasActionType"
+			],
+			[
+				"alp",
+				"alpha_"
+			],
+			[
+				"deafu",
+				"defaultSnapTolerance"
+			],
+			[
+				"action",
+				"actions"
+			],
+			[
+				"contain",
+				"containerHide"
+			],
+			[
+				"acti",
+				"actions"
+			],
+			[
+				"sele",
+				"selectInteractActive"
+			],
+			[
+				"sc",
+				"scope_"
+			],
+			[
+				"path",
+				"path_"
+			],
+			[
+				"syle",
+				"Style"
+			],
+			[
+				"set",
+				"SET_CONTEXT_STATE"
+			],
+			[
+				"remove",
+				"removeDrawInteraction"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/css/maps/outdoor.css",
+			"settings":
+			{
+				"buffer_size": 1333,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "outdoor.css"
+			}
+		},
+		{
+			"file": "src/data/maps/outside/goverments/outside_goverments_1.json",
+			"settings":
+			{
+				"buffer_size": 2223,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/data/maps/outside/waters/outside_waters_details_1.json",
+			"settings":
+			{
+				"buffer_size": 3114,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/data/maps/outside/waters/outside_waters_1.json",
+			"settings":
+			{
+				"buffer_size": 1017,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/data/maps/outside/waters/outside_waters_2.json",
+			"settings":
+			{
+				"buffer_size": 1015,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/data/maps/outside/waters/outside_waters_3.json",
+			"settings":
+			{
+				"buffer_size": 443,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/css/maps/map.css",
+			"settings":
+			{
+				"buffer_size": 5706,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/maps/base.js",
+			"settings":
+			{
+				"buffer_size": 2206,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/maps/outside/bmap.js",
+			"settings":
+			{
+				"buffer_size": 3995,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/maps/outside/init.js",
+			"settings":
+			{
+				"buffer_size": 6066,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/data/maps/outside/outside_menus.json",
+			"settings":
+			{
+				"buffer_size": 1822,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/maps/outside/temples.js",
+			"settings":
+			{
+				"buffer_size": 1175,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "temples.js"
+			}
+		},
+		{
+			"file": "src/map-outside.html",
+			"settings":
+			{
+				"buffer_size": 9154,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "packagecontrol:install",
+		"selected_items":
+		[
+			[
+				"packagecontrol:install",
+				"Package Control: Install Package"
+			],
+			[
+				"packagecontrol:remo",
+				"Package Control: Remove Package"
+			],
+			[
+				":install",
+				"Package Control: Install Package"
+			],
+			[
+				":installp",
+				"Package Control: Install Package"
+			],
+			[
+				":pacage",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"eit",
+				"Emmet: Select Next Item"
+			],
+			[
+				"reload",
+				"TernJS: Reload"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"tern",
+				"tern_for_sublime: Describe"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"rel",
+				"TernJS: Reload"
+			],
+			[
+				"usre",
+				"Minify::User File Settings"
+			],
+			[
+				"use",
+				"Preferences: Settings - User"
+			],
+			[
+				"reloa",
+				"TernJS: Reload"
+			],
+			[
+				"relo",
+				"TernJS: Reload"
+			],
+			[
+				"edi",
+				"Project: Edit Project"
+			],
+			[
+				"ssu",
+				"Set Syntax: Unity JavaScript"
+			],
+			[
+				"re",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"gist",
+				"Gist: Open Gist"
+			],
+			[
+				"sni",
+				"Snippet: wxurl"
+			],
+			[
+				"r",
+				"TernJS: Reload"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"snipp m",
+				"Snippet: module"
+			],
+			[
+				"sn",
+				"Snippet: main"
+			],
+			[
+				"utf",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"ss js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"isnt",
+				"Package Control: Install Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"eidt",
+				"Project: Edit"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"Gist",
+				"Gist: Open Gist"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"isn",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet main",
+				"Snippet: main"
+			],
+			[
+				"puhs",
+				"Git: Push Current Branch"
+			],
+			[
+				"staut",
+				"Git: Status"
+			],
+			[
+				"relad",
+				"TernJS: Reload"
+			],
+			[
+				"snippet",
+				"Snippet: icon"
+			],
+			[
+				"snipp",
+				"Snippet: icon"
+			],
+			[
+				"STATU",
+				"Git: Status"
+			],
+			[
+				"ru",
+				"RunCommands"
+			],
+			[
+				"gru",
+				"Grunt"
+			],
+			[
+				"run",
+				"RunCommands"
+			],
+			[
+				"runco",
+				"Run Commands"
+			],
+			[
+				"stats",
+				"Git: Status"
+			],
+			[
+				"grunta",
+				"GruntArgs"
+			],
+			[
+				"gruntargs",
+				"GruntArgs"
+			],
+			[
+				"grut",
+				"Grunt"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"gist ",
+				"Gist: Create Public Gist"
+			],
+			[
+				"",
+				"Build: New Build System"
+			],
+			[
+				"grunt ",
+				"Grunt"
+			],
+			[
+				"grun",
+				"Grunt"
+			],
+			[
+				"lsit",
+				"Themr: List themes"
+			],
+			[
+				"mp",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"push cur",
+				"Git: Push Current Branch"
+			],
+			[
+				"git add",
+				"Git: Add Remote"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"relaod",
+				"TernJS: Reload"
+			],
+			[
+				"Snippet: ",
+				"Snippet: metascalecache"
+			],
+			[
+				"jump",
+				"TernJS: Jump to definition"
+			],
+			[
+				"subl",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"sublimecod",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"sublimeCode",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"themr",
+				"Themr: List themes"
+			],
+			[
+				"gist open",
+				"Gist: Open Gist"
+			],
+			[
+				"gist in",
+				"Gist: Insert Gist"
+			],
+			[
+				"us",
+				"Preferences: Settings - User"
+			],
+			[
+				"main",
+				"OmniSharpSublime: Add New Interface"
+			],
+			[
+				"eid",
+				"Project: Edit"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"bui",
+				"Build With: WebBuilder"
+			],
+			[
+				"new s",
+				"Build: New Build System"
+			],
+			[
+				"Snippet: clas",
+				"Snippet: Class"
+			],
+			[
+				"relao",
+				"TernJS: Reload"
+			],
+			[
+				"rela",
+				"TernJS: Reload"
+			],
+			[
+				"gis",
+				"Gist: Open Gist"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"open",
+				"Gist: Open Gist"
+			],
+			[
+				"gistop",
+				"Gist: Open Gist"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"embe",
+				"Gist: Embed as script"
+			],
+			[
+				"isnert",
+				"Gist: Insert Gist"
+			],
+			[
+				"chang",
+				"Gist: Change Gist Description"
+			],
+			[
+				"dele",
+				"Gist: Delete Gist"
+			],
+			[
+				"hao",
+				"HaoGist: About"
+			],
+			[
+				"create",
+				"HaoGist: Create Public Gist"
+			],
+			[
+				"haoset",
+				"HaoGist: Settings – User"
+			],
+			[
+				"hao upda",
+				"HaoGist: Update Gist Description"
+			],
+			[
+				"hoa",
+				"HaoGist: Open Gist"
+			],
+			[
+				"haoupda",
+				"HaoGist: Update Gist Description"
+			],
+			[
+				"oepn",
+				"Gist: Open Gist"
+			],
+			[
+				"gistcha",
+				"Gist: Change Gist Description"
+			],
+			[
+				"open git",
+				"Gist: Open Gist"
+			],
+			[
+				"gist ch",
+				"Gist: Change Gist Description"
+			],
+			[
+				"change",
+				"Gist: Change Gist Description"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"chan",
+				"Gist: Change Gist Description"
+			],
+			[
+				"l",
+				"Package Control: List Packages"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ju",
+				"TernJS: Jump to definition"
+			],
+			[
+				"Ter",
+				"TernJS: Reload"
+			],
+			[
+				"ten",
+				"TernJS: Next Occurance"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgrade package",
+				"Package Control: Upgrade Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 239.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/css",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/waters",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/maps",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/maps/outside",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/libs"
+	],
+	"file_history":
+	[
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/powers/outside_powers_1.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/warnings/outside_warnings_2.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/warnings/outside_warnings_3.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/warnings/outside_warnings_1.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/powers/outside_powers_2.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/goverments/outside_goverments_details_1.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/goverments/outside_goverments_details_2.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/goverments/outside_goverments_details_3.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/goverments/outside_goverments_3.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/maps/temples.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/goverments/outside_goverments_2.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/goverments/outside_goverments_1.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/css/maps/map.css",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/maps/outside/init.js",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/index.html",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/maps/base.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/maps/outside/bmap.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/gulpfile.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/css/maps/indoor.css",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/map-area.html",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/map-indoor.html",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/config.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/map-outside.html",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/outside_menus.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/outside_goverment.json",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/data/maps/outside/outside_goverment_details.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/libs/lodash.min.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/css/home.css",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/data/maps/outside/outside_menus.json",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/maps/init.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/data/maps/icons.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/common.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/data/maps/outside_menus.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/data/maps/area_menus.json",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/data/maps/indoor-menus.json",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/maps/bmap.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/package.json",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (Windows).sublime-keymap",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/HTMLPrettify.sublime-settings",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/src/js/home.js",
+		"/E/fengmap-project/project_kuitunxiaofang/trunk/frontend/project_kuitunxiaofang.sublime-project",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/FMEdit.sublime-project",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/css/main.css",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/.jsbeautifyrc",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/utils/config.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapCanvas/reducer.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/utils/fmMapData/fmDataStatesAPI.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/HeadToolbar/Container.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/FMapDataCtrl/reducer.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapCanvas/Container.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/DrawGeoPaintCard/DrawPanel.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/package.json",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/PathGeoPaintCard/Container.jsx",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/main.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/utils/undoConfig.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/utils/ol/olManagerAPI.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/core/reducer.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapActionToolbar/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/HeadToolbar/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/TrafficFacilityCard/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/ThemeManage/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/PathSelectCard/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/PathGeoPaintCard/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/OlMapCanvas/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/MapDataTable/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/LayerManager/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapCanvas/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapContainer/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/TrafficManage/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapContextMenu/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapEditPanel/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/SettingsPanel/selectors.js",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Alignment/Default (Windows).sublime-keymap",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/FMapDataCtrl/index.js",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/webpack-dev.config.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/utils/ol/interactionExtent/polygonSplitter.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/utils/ol/interactionExtent/ol.geom.utils.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/utils/ol/tools.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/OlMapCanvas/Container.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/OlMapCanvas/reducer.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/core/undoableReducers.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/HeadToolbar/actions.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/HeadToolbar/reducer.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/NotificationPanel/Container.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/OlMapCanvas/actions.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/OlMapCanvas/index.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapCanvas/actions.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapLayerManager/Container.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/NotificationPanel/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/DrawPOICard/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/FMapThemeCtrl/reducer.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/POIManagement/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapLayerManager/selectors.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/POIManagement/reducer.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/POIManagement/sagas.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/utils/fmMapData/fmDataAPI.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/FMapDataCtrl/actions.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/components/DrawSelectCard/PolygonPanel.jsx",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/utils/contants/requestError.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/core/history.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/core/initialState.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/POIManagement/Container.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapActionToolbar/Container.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/MapActionToolbar/actions.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/src/js/controllers/TrafficManage/reducer.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta_cwj/FMEdit.sublime-workspace",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/components/ThemeManage/AddLabelDialog.jsx",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/components/DrawPOICard/Container.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/controllers/POIManagement/Container.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/components/DropzoneUpload.jsx",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/utils/fmMapData/fmDataAPI.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/components/ThemeManage/AddModelDialog.jsx",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/utils/validation.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/components/DrawSelectCard/PolygonPanel.jsx",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/components/DrawSelectCard/CustomePolygonStyle.jsx",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/components/DrawPOICard/reducer.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/utils/ol/olPath.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/utils/ol/olManagerAPI.js",
+		"/E/fengmap-project/FengMap_Editor/branches/frontend/bra_frontend_1.0_beta/src/js/components/ThemeManage/ModelStyleTable.jsx"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 123.0,
+		"where_history":
+		[
+			"<open files>,<open folders>,-dist/*,-data/*,-*.min.*",
+			"<open files>,<open folders>,-dist/*,-data/*",
+			"<open files>,<open folders>",
+			"<open files>",
+			"<open folders>,-*min.js",
+			"<open folders>",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"水源编号",
+			"力量编号",
+			"水源编号",
+			"message",
+			"ui messgae",
+			"messageInfoEffect",
+			"$('.ui.message').data('itemindex')",
+			"unHighlightMarker",
+			"createTable",
+			"handleCloseEvent",
+			"function() {\n\t\t\t\t\tslideEffectComplete(itemindex);\n\t\t\t\t}",
+			"slideEffectComplete",
+			"handleCloseEvent",
+			"close",
+			"createTable",
+			"handleCloseEvent",
+			"close",
+			"slideEffectComplete",
+			"createMarkersByType",
+			"HighlightMarker",
+			"highlightMarker",
+			"unHighlightMarker",
+			"highlightMarker",
+			"getDefaultIconByType",
+			"highlightMarker",
+			"createHighlightMarker",
+			"gotocenter",
+			"84.909869,44.432158",
+			"84.919192,44.430057",
+			"84.919352,44.430609",
+			"84.918973,44.430836",
+			"84.907978,44.425124",
+			"84.909869,44.412158",
+			"84.909869,44.432158",
+			"84.909869",
+			"44.432158",
+			"createHighlightMarker",
+			"tbody",
+			"createMarkersByType",
+			"createTable",
+			"goToCenter",
+			"defaultMarkers",
+			"createDefaultMarker",
+			"defaultMarkers",
+			"createHighlightMarker",
+			"defaultMarkers",
+			"createDefaultMarker",
+			"goToCenter",
+			"goto",
+			"gocenter",
+			"#leftBanner .side-search.grid",
+			".find('.ui.segment')",
+			"transition hidden",
+			"transition",
+			" hidden",
+			" transition hidden",
+			"side-search",
+			"transp",
+			"trans",
+			"\"",
+			"getMarkerContentTempl",
+			"createMarkersByType",
+			"getDetailsById",
+			"table",
+			"createBMapMarkers",
+			"defaultMarkers[type]",
+			"table[ttype][j]",
+			"type",
+			"createBMapMarkers",
+			"goverment",
+			"createTable",
+			"createMarkersByType",
+			"goverment",
+			"createTable",
+			"bindBannerItemEvent",
+			"messageInfoEffect",
+			"changeMsgWinPositon",
+			"transition",
+			"createTable",
+			"changeMsgWinPositon",
+			"bindBannerItemEvent",
+			"changeMsgWinPositon",
+			"message",
+			"createtable",
+			"bindBannerItemEvent",
+			"tables",
+			"getList",
+			"page",
+			"bindBannerEvent",
+			"mainGov",
+			"重点",
+			"leftBanner",
+			"templ",
+			"trigger",
+			"单位所需的信息框文字",
+			"单位编号",
+			"map",
+			"contact电话",
+			"联系人",
+			"层数",
+			"面积",
+			"危险等级",
+			"单位类型",
+			"级别类型",
+			"单位地址",
+			"单位编号",
+			"单位名称",
+			"单位编号",
+			"经纬坐标",
+			"主机状态",
+			"单位类型",
+			"单位名称",
+			"mine",
+			"70px",
+			"34px",
+			".container-center .ui.sidebar.menu .item .ui.segment",
+			"body",
+			".container-center .ui.sidebar .ui.items",
+			"divid",
+			"border:none",
+			".divided",
+			"divided",
+			".container-center .ui.sidebar.menu>.ui.divided.items>.item",
+			"inverted ",
+			"red ",
+			".container-center .ui.sidebar .divided.items .segment",
+			"body",
+			"side"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"__",
+			"'+this.imgURL_+'",
+			"\"+this.imgURL_+\"",
+			"'+this.imgURL_+'",
+			"\"+this.imgURL_+\"",
+			"'+this.imgURL_+'",
+			"\"+this.imgURL_+\"",
+			"f0f0c0",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/css/maps/outdoor.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								502,
+								502
+							]
+						],
+						"settings":
+						{
+							"auto_name": "outdoor.css",
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/data/maps/outside/goverments/outside_goverments_1.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2223,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								101,
+								101
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/data/maps/outside/waters/outside_waters_details_1.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/data/maps/outside/waters/outside_waters_1.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35,
+								35
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/data/maps/outside/waters/outside_waters_2.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1015,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3,
+								3
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/data/maps/outside/waters/outside_waters_3.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/css/maps/map.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4075,
+								4075
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6043.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/js/maps/base.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								916,
+								916
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 840.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/js/maps/outside/bmap.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3809,
+								3828
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4004.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/js/maps/outside/init.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								105
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/data/maps/outside/outside_menus.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1509,
+								1509
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2184.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/js/maps/outside/temples.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								909,
+								909
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "temples.js",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "src/map-outside.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8315,
+								8315
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5388.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 172.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "project_kuitunxiaofang.sublime-project",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"map.js",
+				"src\\js\\maps\\outside\\bmap.js"
+			],
+			[
+				"bma",
+				"src\\js\\maps\\outside\\bmap.js"
+			],
+			[
+				"bmap",
+				"src\\js\\maps\\outside\\bmap.js"
+			],
+			[
+				"config",
+				"src\\js\\utils\\config.js"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"fmthe",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"fmd",
+				"src\\js\\utils\\fmMapData\\fmDataStatesAPI.js"
+			],
+			[
+				"conf",
+				"src\\js\\utils\\config.js"
+			],
+			[
+				"dif",
+				"src\\js\\utils\\diff.js"
+			],
+			[
+				"und",
+				"src\\js\\utils\\undoConfig.js"
+			],
+			[
+				"mainc",
+				"src\\css\\main.css"
+			],
+			[
+				"main",
+				"src\\js\\main.js"
+			],
+			[
+				"undoco",
+				"src\\js\\utils\\undoConfig.js"
+			],
+			[
+				"undocon",
+				"src\\js\\utils\\undoConfig.js"
+			],
+			[
+				"confi",
+				"src\\js\\utils\\config.js"
+			],
+			[
+				"olgeo",
+				"src\\js\\utils\\ol\\interactionExtent\\polygonSplitter.js"
+			],
+			[
+				"olm",
+				"src\\js\\utils\\ol\\olManagerAPI.js"
+			],
+			[
+				"coni",
+				"src\\js\\utils\\config.js"
+			],
+			[
+				"undoc",
+				"src\\js\\utils\\undoConfig.js"
+			],
+			[
+				"undo",
+				"src\\js\\core\\undoableReducers.js"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"pol",
+				"src\\js\\components\\DrawSelectCard\\PolygonPanel.jsx"
+			],
+			[
+				"polygon",
+				"src\\js\\components\\DrawSelectCard\\PolygonPanel.jsx"
+			],
+			[
+				"olf",
+				"src\\js\\utils\\ol\\olFeatures.js"
+			],
+			[
+				"fmda",
+				"src\\js\\utils\\fmMapData\\fmDataAPI.js"
+			],
+			[
+				"pre",
+				"src\\js\\components\\HeadToolbarCard\\PreviewDialog.jsx"
+			],
+			[
+				"olma",
+				"src\\js\\utils\\ol\\olManagerAPI.js"
+			],
+			[
+				"spli",
+				"src\\js\\utils\\ol\\interactionExtent\\splitinteraction.js"
+			],
+			[
+				"splitter",
+				"src\\js\\utils\\ol\\interactionExtent\\splitterinteraction.js"
+			],
+			[
+				"olpa",
+				"src\\js\\utils\\ol\\olPath.js"
+			],
+			[
+				"local",
+				"src\\js\\utils\\localStorage\\localStorageAPI.js"
+			],
+			[
+				"col",
+				"src\\js\\utils\\colorTool.js"
+			],
+			[
+				"olp",
+				"src\\js\\utils\\ol\\olPath.js"
+			],
+			[
+				"themea",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"loca",
+				"src\\js\\utils\\localStorage\\localStorageAPI.js"
+			],
+			[
+				"datas",
+				"src\\js\\utils\\fmMapData\\fmDataStatesAPI.js"
+			],
+			[
+				"themes",
+				"src\\js\\utils\\fmMapTheme\\themeStatesAPI.js"
+			],
+			[
+				"theme",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"con",
+				"src\\js\\utils\\config.js"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"img",
+				"src\\js\\utils\\imgPreLoader.js"
+			],
+			[
+				"loc",
+				"src\\js\\utils\\localStorage\\localStorageAPI.js"
+			],
+			[
+				"thema",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"imgr",
+				"src\\js\\utils\\imgPreLoader.js"
+			],
+			[
+				"ol",
+				"src\\js\\utils\\ol\\olManagerAPI.js"
+			],
+			[
+				"thems",
+				"src\\js\\utils\\fmMapTheme\\themeStatesAPI.js"
+			],
+			[
+				"lo",
+				"src\\js\\utils\\localStorage\\localStorageAPI.js"
+			],
+			[
+				"rest",
+				"src\\js\\api\\app\\restApi.js"
+			],
+			[
+				"ser",
+				"src\\js\\api\\app\\serverApi.js"
+			],
+			[
+				"th",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"serv",
+				"src\\js\\api\\app\\serverApi.js"
+			],
+			[
+				"tool",
+				"src\\js\\utils\\ol\\tools.js"
+			],
+			[
+				"them",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"ol-e",
+				"src\\js\\libs\\ol3-ext\\ol3-ext.js"
+			],
+			[
+				"ole",
+				"src\\js\\libs\\ol3-ext\\ol3-ext.css"
+			],
+			[
+				"web",
+				"webpack-build.config.js"
+			],
+			[
+				"ava",
+				"src\\js\\components\\HeadToolbarCard\\AvatarMenu.jsx"
+			],
+			[
+				"mian",
+				"src\\js\\main.js"
+			],
+			[
+				"server",
+				"src\\js\\api\\app\\serverApi.js"
+			],
+			[
+				"dataap",
+				"src\\js\\utils\\fmMapData\\fmDataAPI.js"
+			],
+			[
+				"fmdata",
+				"src\\js\\utils\\fmMapData\\fmDataAPI.js"
+			],
+			[
+				"dataa",
+				"src\\js\\utils\\fmMapData\\fmDataAPI.js"
+			],
+			[
+				"coo",
+				"src\\js\\api\\utils\\cookies.js"
+			],
+			[
+				"olfea",
+				"src\\js\\utils\\ol\\olFeatures.js"
+			],
+			[
+				"opl",
+				"src\\js\\utils\\ol\\olPath.js"
+			],
+			[
+				"fmdatas",
+				"src\\js\\utils\\fmMapData\\fmDataStatesAPI.js"
+			],
+			[
+				"requ",
+				"src\\js\\utils\\contants\\requestError.js"
+			],
+			[
+				"main.",
+				"src\\js\\main.js"
+			],
+			[
+				"mapop",
+				"src\\js\\utils\\ol\\olMapOptions.js"
+			],
+			[
+				"maptheme",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"mapthem",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"main.js",
+				"src\\js\\main.js"
+			],
+			[
+				"mapo",
+				"src\\js\\utils\\ol\\olMapOptions.js"
+			],
+			[
+				"split",
+				"src\\js\\utils\\ol\\interactionExtent\\polygonSplitter.js"
+			],
+			[
+				"index",
+				"src\\index.html"
+			],
+			[
+				"mapth",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"olme",
+				"src\\js\\utils\\ol\\olMeasure.js"
+			],
+			[
+				"olcon",
+				"src\\js\\utils\\ol\\olContextMenu.js"
+			],
+			[
+				"olman",
+				"src\\js\\utils\\ol\\olManagerAPI.js"
+			],
+			[
+				"poly",
+				"src\\js\\components\\DrawSelectCard\\PolygonPanel.jsx"
+			],
+			[
+				"fm",
+				"src\\js\\utils\\fmMapData\\fmDataAPI.js"
+			],
+			[
+				"model",
+				"src\\js\\components\\ThemeManage\\modelStyleTable.jsx"
+			],
+			[
+				"fmth",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"olmain",
+				"src\\js\\utils\\ol\\olManagerAPI.js"
+			],
+			[
+				"polo",
+				"src\\js\\components\\DrawSelectCard\\PolygonPanel.jsx"
+			],
+			[
+				"fmap",
+				"src\\js\\utils\\fmMapData\\fmDataStatesAPI.js"
+			],
+			[
+				"mainjs",
+				"src\\js\\main.js"
+			],
+			[
+				"models",
+				"src\\js\\components\\ThemeManage\\modelStyleTable.jsx"
+			],
+			[
+				"deaw",
+				"src\\js\\components\\DrawGeoPaintCard\\DrawPanel.js"
+			],
+			[
+				"drawp",
+				"src\\js\\components\\DrawGeoPaintCard\\DrawPanel.js"
+			],
+			[
+				"olmap",
+				"src\\js\\utils\\ol\\olManagerAPI.js"
+			],
+			[
+				"fmthem",
+				"src\\js\\utils\\fmMapTheme\\themeAPI.js"
+			],
+			[
+				"mapcan",
+				"src\\js\\controllers\\MapCanvas\\Container.js"
+			],
+			[
+				"thme",
+				"src\\js\\utils\\themeAPI.js"
+			],
+			[
+				"multi",
+				"src\\js\\components\\DrawSelectCard\\MultiPolygonPanel.jsx"
+			],
+			[
+				"mapser",
+				"jssdk\\src\\fengmap\\MapService.js"
+			],
+			[
+				"fmna",
+				"jssdk\\src\\fengmap\\navi\\FMNaviAnalyser.js"
+			],
+			[
+				"navi",
+				"jssdk\\src\\fengmap\\navi\\FMNavigation.js"
+			],
+			[
+				"mapu",
+				"jssdk\\src\\fengmap\\MapUtil.js"
+			],
+			[
+				"fmm",
+				"jssdk\\src\\newapi-fengmap\\FMMap.js"
+			],
+			[
+				"map",
+				"jssdk\\src\\fengmap\\Map.js"
+			],
+			[
+				"group",
+				"jssdk\\src\\fm-controls\\groupCtrl.js"
+			],
+			[
+				"heat",
+				"jssdk\\src\\fengmap\\hud\\heatmap.js"
+			],
+			[
+				"groupc",
+				"jssdk\\src\\fm-controls\\groupCtrl.js"
+			],
+			[
+				"fmstoremod",
+				"jssdk-api-doc\\classes\\fengmap.FMStroeModel.html"
+			],
+			[
+				"fmmap",
+				"jssdk\\src\\newapi-fengmap\\FMMap.js"
+			],
+			[
+				"fmma",
+				"jssdk-api-doc\\modules\\FMMap.html"
+			],
+			[
+				"fmmodel",
+				"jssdk\\src\\newapi-fengmap\\node\\FMModel.js"
+			],
+			[
+				"fmgrou",
+				"jssdk\\src\\fm-controls\\groupLayersCtrl.js"
+			],
+			[
+				"fmimagem",
+				"jssdk\\src\\newapi-fengmap\\node\\FMImageMarker.js"
+			],
+			[
+				"fmloca",
+				"jssdk\\src\\newapi-fengmap\\node\\FMLocationMarker.js"
+			],
+			[
+				"fmtext",
+				"jssdk\\src\\newapi-fengmap\\node\\FMTextMarker.js"
+			],
+			[
+				"fmi",
+				"jssdk\\src\\newapi-fengmap\\node\\FMImageMarker.js"
+			],
+			[
+				"fmfa",
+				"jssdk\\src\\newapi-fengmap\\node\\FMFacility.js"
+			],
+			[
+				"fmla",
+				"jssdk\\src\\newapi-fengmap\\node\\FMLabel.js"
+			],
+			[
+				"fmg",
+				"jssdk\\src\\newapi-fengmap\\node_group\\FMGroup.js"
+			],
+			[
+				"poloma",
+				"jssdk\\src\\newapi-fengmap\\node\\FMPolygonMarker.js"
+			],
+			[
+				"fmline",
+				"jssdk\\src\\newapi-fengmap\\node_layer\\FMLineLayer.js"
+			],
+			[
+				"mapview",
+				"jssdk\\src\\fengmap\\MapView.js"
+			],
+			[
+				"control",
+				"jssdk\\src\\fm-controls\\controlOptions.js"
+			],
+			[
+				"popinof",
+				"jssdk\\src\\fm-controls\\popInfoWindow.js"
+			],
+			[
+				"fmcer",
+				"jssdk\\src\\afm\\appinfo\\FMCerity.js"
+			],
+			[
+				"popm",
+				"jssdk\\src\\fm-controls\\popMarker.js"
+			],
+			[
+				"mapoption",
+				"jssdk\\src\\fengmap\\MapOptions.js"
+			],
+			[
+				"zoom",
+				"jssdk\\src\\fm-controls\\zoomCtrl.js"
+			],
+			[
+				"scrollg",
+				"jssdk\\src\\fm-controls\\groupLayersCtrl.js"
+			],
+			[
+				"fmmap.js",
+				"jssdk\\src\\newapi-fengmap\\FMMap.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ea",
+				"E:\\myhost\\easygame\\easygame.sublime-project"
+			],
+			[
+				"in",
+				"E:\\myhost\\inno studio\\innoStudio.sublime-workspace"
+			],
+			[
+				"uti",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"u",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"lian",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
+			[
+				"o",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"l",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
+			[
+				"op",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"lai",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
+			[
+				"",
+				"E:\\sublime_files\\maxscripts\\maxscripts.sublime-project"
+			],
+			[
+				"ut",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"li",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
+			[
+				"open",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"ope",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"util",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"z",
+				"E:\\UnityProjects\\zhangqing\\zhangqing.sublime-project"
+			],
+			[
+				"zhang",
+				"E:\\UnityProjects\\zhangqing\\zhangqing.sublime-project"
+			],
+			[
+				"lia",
+				"E:\\UnityProjects\\lianzheng\\lianzheng.sublime-project"
+			],
+			[
+				"unity",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"unti",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"web",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"nor",
+				"E:\\myhost\\nubia Z9\\nubiaz9.sublime-project"
+			],
+			[
+				"uniti",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity.sublime-workspace"
+			],
+			[
+				"unit",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"unitywe",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"unty",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"openshift",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"uit",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"unityweb",
+				"C:\\Users\\easyfrog\\Desktop\\SuWeb\\Web\\unity_web.sublime-project"
+			],
+			[
+				"nub",
+				"E:\\myhost\\nubia Z9\\nubiaz9.sublime-project"
+			],
+			[
+				"nu",
+				"E:\\myhost\\nubia Z9\\nubiaz9.sublime-project"
+			],
+			[
+				"n",
+				"E:\\myhost\\nubia Z9\\nubiaz9.sublime-project"
+			],
+			[
+				"oppe",
+				"D:\\Program Files (x86)\\Git\\projects\\openshift.sublime-project"
+			],
+			[
+				"ex",
+				"E:\\myhost\\ExpressTest\\ExpressTest.sublime-project"
+			],
+			[
+				"c",
+				"D:\\cabinet\\cabinet.sublime-project"
+			],
+			[
+				"re",
+				"E:\\UnityProjects\\shunyi\\Rex_Scene\\Rex.sublime-project"
+			],
+			[
+				"\\",
+				"E:\\EdgeWorks\\utils\\utils.sublime-project"
+			],
+			[
+				"no",
+				"E:\\myhost\\nodeWorks\\nodeWorks.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 308.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

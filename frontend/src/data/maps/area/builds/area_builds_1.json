@@ -1,0 +1,45 @@
+{
+	"title": "建筑楼层列表",
+	"columns": {
+		"one": "名称",
+		"two": "面积",
+		"three": "状态"
+	},
+	"list": [{
+		"name": "一层",
+		"area": "15000㎡",
+		"status": "正常",
+		"lonlat": "N/A",
+		"id": "N/A"
+	}, {
+		"name": "二层",
+		"area": "12000㎡",
+		"status": "异常",
+		"lonlat": "N/A",
+		"id": "N/A"
+	}, {
+		"name": "三层",
+		"area": "12000㎡",
+		"status": "正常",
+		"lonlat": "N/A",
+		"id": "N/A"
+	}, {
+		"name": "四层",
+		"area": "10000㎡",
+		"status": "正常",
+		"lonlat": "N/A",
+		"id": "N/A"
+	}, {
+		"name": "五层",
+		"area": "10000㎡",
+		"status": "正常",
+		"lonlat": "N/A",
+		"id": "N/A"
+	}, {
+		"name": "地下一层",
+		"area": "18000㎡",
+		"status": "正常",
+		"lonlat": "N/A",
+		"id": "N/A"
+	}]
+}

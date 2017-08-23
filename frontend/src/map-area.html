@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>奎屯智慧消防-室外地图</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/map.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="css/maps/area.css">
+</head>
+
+<body>
+    <header class="ui top">
+        <!--<div class="ui label large left">奎屯市
+             <div class="detail">2017-07-20 13:00 星期四 21~32℃ 晴 风力 1~2 级 风向 无持续风向微风</div>
+        </div>-->
+        <a class="ui label large float-right">返回主菜单 </a>
+    </header>
+    <div class="ui bottom container-center">
+        <div class="banner-left banner" id="leftBanner">
+            <div class="ui inverted labeled icon left block vertical sidebar borderless menu uncover visible leftBanner-back" data-direction="left">
+                <a class="item" data-toggle="search">
+                    <div class="ui segment">
+                        <i class="search icon"></i>
+                        <p>搜索</p>
+                    </div>
+                </a>
+                <a href="map-outside.html" class="item back-btn" data-toggle="items" data-itemsindex="0">
+                    <div class="ui segment">
+                        <h3>返回</h3>
+                        <h3>全市地图</h3>
+                    </div>
+                </a>
+                <!-- <a class="item" data-toggle="items" data-itemsindex="0">
+                    <div class="ui segment">
+                        <h3>今日</h3>
+                        <h3>报警</h3>
+                    </div>
+                </a>
+                <div class="ui items item-highligth-list">
+                    <a class="fitting item">
+                        <div class="ui inverted segment">
+                            <p>火警</p>
+                            <h4 class="ui header">2</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>主机报警</p>
+                            <h4 class="ui header">2</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>水源异常</p>
+                            <h4 class="ui header">2</h4>
+                        </div>
+                    </a>
+                </div>
+                <a class="item" data-toggle="items" data-itemsindex="1">
+                    <div class="ui segment">
+                        <h3>月度</h3>
+                        <h3>统计</h3>
+                    </div>
+                </a>
+                <div class="ui items item-normal-list transition hidden">
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>火警</p>
+                            <h4 class="ui header">17</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>主机报警</p>
+                            <h4 class="ui header">1132</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>水源异常</p>
+                            <h4 class="ui header">12</h4>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+            <div class="side-search ui centered grid transition hidden">
+                <div class="ui search column">
+                    <div class="ui transparent inverted icon input">
+                        <input type="text" placeholder="请输入您要搜索内容的关键字">
+                    </div>
+                    <i class="search icon ui inverted"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container-map" id="f-Map">
+        </div>
+        <div class="banner-right banner" id="rightBanner">
+            <div class="ui inverted labeled icon right block vertical sidebar borderless menu uncover visible" data-direction="right">
+                <a class="item" data-toggle="tools">
+                    <div class="ui segment">
+                        <i class="search icon"></i>
+                        <p>单位详情</p>
+                    </div>
+                </a>
+                <!-- <a class="item" data-toggle="items" data-itemsindex="2">
+                    <div class="ui segment">
+                        <h3>重点</h3>
+                        <h3>单位</h3>
+                    </div>
+                </a>
+                <div class="ui items transition visible item-normal-list">
+                    <a class="fitting item">
+                        <div class="ui segment" id="mainGov">
+                            <p>一级单位</p>
+                            <h4 class="ui header">17</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>二级单位</p>
+                            <h4 class="ui header">1132</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>三级单位</p>
+                            <h4 class="ui header">12</h4>
+                        </div>
+                    </a>
+                </div>
+                <a class="item" data-toggle="items" data-itemsindex="3">
+                    <div class="ui segment">
+                        <h3>消防</h3>
+                        <h3>水源</h3>
+                    </div>
+                </a>
+                <div class="ui items transition hidden item-normal-list">
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>市政给水</p>
+                            <h4 class="ui header">17</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>消防水池</p>
+                            <h4 class="ui header">1132</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>天然水源</p>
+                            <h4 class="ui header">12</h4>
+                        </div>
+                    </a>
+                </div>
+                <a class="item" data-toggle="items" data-itemsindex="4">
+                    <div class="ui segment">
+                        <h3>消防</h3>
+                        <h3>力量</h3>
+                    </div>
+                </a>
+                <div class="ui items transition hidden item-normal-list">
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>消防支队</p>
+                            <h4 class="ui header">17</h4>
+                        </div>
+                    </a>
+                    <a class="fitting item">
+                        <div class="ui segment">
+                            <p>联动单位</p>
+                            <h4 class="ui header">1132</h4>
+                        </div>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="right-watch-video-box transition hidden">
+        <p class="right-watch-video-title">查看视频</p>
+        <img src="close.png" class="right-watch-c" />
+        <video loop controls webkit-playsinline="true">
+        <source src="video/1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' ></source>
+        </video>
+    </div>
+    <div class="right-Info-tbl-box">
+        <div class="ui attached message transition hidden right-Info-tbl">
+        </div>
+    </div>
+    <!-- 单位详情 start -->
+    <div class="area-unit-detail-box">
+        <div class="area-unit-detail-title">
+            <span>单位详情</span>
+            <i class="close icon"></i>
+        </div>
+        <table class="ui very basic table area-unit-detail">
+            <tbody>
+                <tr>
+
+                    <td>单位编号<span>|</span></td>
+                    <td class="area-unit-detail-list">KTDW-08-0001</td>
+                </tr>
+                <tr>
+                    <td>单位名称<span>|</span></td>
+                    <td class="area-unit-detail-list">友好时尚购物中心</td>
+                </tr>
+                <tr>
+                    <td>联系人<span>|</span></td>
+                    <td class="area-unit-detail-list">马新民</td>
+                </tr>
+                <tr>
+                    <td>联系电话<span>|</span></td>
+                    <td class="area-unit-detail-list">18809923789</td>
+                </tr>
+                <tr>
+                    <td>危险等级<span>|</span></td>
+                    <td class="area-unit-detail-list">民用</td>
+                </tr>
+                <tr>
+                    <td>监管级别<span>|</span></td>
+                    <td class="area-unit-detail-list">一级消防安全重点单位</td>
+                </tr>
+                <tr>
+                    <td>单位类型<span>|</span></td>
+                    <td class="area-unit-detail-list">购物</td>
+                </tr>
+                <tr>
+                    <td>建筑面积<span>|</span></td>
+                    <td class="area-unit-detail-list">57800㎡</td>
+                </tr>
+                <tr>
+                    <td>楼层数<span>|</span></td>
+                    <td class="area-unit-detail-list">5</td>
+                </tr>
+               
+            </tbody>
+        </table>
+        <div class="area-unit-detail-btn-box">
+            <button class="ui button area-nit-detail-btn-width">室外地图 </button>
+            <button class="ui button">室内地图 </button>
+        </div>
+    </div>
+    <!-- 单位详情 end -->
+    
+    <script id="template" type="x-tmpl-mustache">
+    </script>
+    <script src="libs/fengmap.min-v2.0.20.js"></script>
+    <!-- build:js -->
+    <script src="libs/jquery-2.1.4.min.js"></script>
+    <script src="libs/semantic/semantic.min.js"></script>
+    <script src="libs/mustache.js"></script>
+    <script src="libs/lodash.min.js"></script>
+    <script src="js/config.js"></script>
+    <script id="headerTmpl" src="js/maps/temples.js"></script>
+    <script src="js/maps/base.js"></script>
+    <!-- endbuild -->
+    <script id="headerTmpl" src="js/maps/area/init.js"></script>
+    <script id="headerTmpl" src="js/maps/area/temples.js"></script>
+    <script src="libs/echarts.common.min.js"></script>
+    <script type="text/javascript" src="js/maps/area/fmap.js"></script>
+</body>
+
+</html>

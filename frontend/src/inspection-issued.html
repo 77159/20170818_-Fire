@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>奎屯智慧消防-下发规则</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/map.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="css/maps/plan-list.css">
+</head>
+
+<body>
+<header class="ui top">
+    <div class="ui label large left">奎屯市
+        <div class="detail">2017-07-20 13:00 星期四 21~32℃ 晴 风力 1~2 级 风向 无持续风向微风</div>
+    </div>
+    <a class="ui label large float-right" href="index.html">返回主菜单 </a>
+</header>
+<div class="ui bottom container-center">
+    <div class="banner-left banner" id="leftBanner">
+        <div class="ui inverted labeled icon left block vertical sidebar borderless menu uncover visible"
+             data-direction="left">
+            <a href="inspection-rule.html" class="item" data-toggle="items" data-itemsindex="0">
+                <div class="ui segment">
+                    <h3>巡检</h3>
+                    <h3>规则</h3>
+                </div>
+            </a>
+            <a href="inspection-issued.html" class="item" data-toggle="items" data-itemsindex="1">
+                <div class="ui segment">
+                    <h3>下发</h3>
+                    <h3>规则</h3>
+                </div>
+            </a>
+            <a href="inspection-recording.html" class="item" data-toggle="items"
+               data-itemsindex="2">
+                <div class="ui segment">
+                    <h3>巡检</h3>
+                    <h3>记录</h3>
+                </div>
+            </a>
+            <a href="inspection-statistics.html" class="item" data-toggle="items"
+               data-itemsindex="3">
+                <div class="ui segment">
+                    <h3>巡检</h3>
+                    <h3>统计</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="banner-content" id="files-list">
+        <div class="banner-content-container">
+            <div class="content_top">
+                <div class="column search">
+                    <div class="ui inverted icon input">
+                        <input type="text" placeholder="请输入您要搜索内容的关键字" id="search">
+                        <i class="search icon" id="iconSearch"></i>
+                    </div>
+                </div>
+                <div class="column select" id="planType">
+                    <select class="ui dropdown">
+                        <option value="">请选择监管级别</option>
+                        <option value="1">一级类别</option>
+                        <option value="0">二级类别</option>
+                    </select>
+                </div>
+                <div class="column select" id="caseType">
+                    <select class="ui dropdown">
+                        <option value="">请选择单位类型</option>
+                        <option value="0">住宅</option>
+                        <option value="0">商城</option>
+                    </select>
+                </div>
+                <div class="column btn-right">
+                    <span id="button" class="id_button">批量下发</span>    
+                </div>                
+
+                <!--弹出层表格-->
+                <div class="create_table issued hide">
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th colspan='4'>批量下发</th>
+                        </tr>
+                        <tr>
+                            <th><label><input type="checkbox"></label></th>
+                            <th>规则名称</th>
+                            <th>规则周期</th>
+                            <th>规则描述</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><label><input type="checkbox"></label></td>
+                            <td>周度重要设备检查</td>
+                            <td>日度</td>
+                            <td>每日对单位内消防重点设备、区域进行例行检查，并按时上报检查结果</td>
+                        </tr>
+                        <tr>
+                            <td><label><input type="checkbox"></label></td>
+                            <td>周度重要设备检查</td>
+                            <td>日度</td>
+                            <td>每日对单位内消防重点设备、区域进行例行检查，并按时上报检查结果</td>
+                        </tr>
+                        <tr>
+                            <td><label><input type="checkbox"></label></td>
+                            <td>周度重要设备检查</td>
+                            <td>日度</td>
+                            <td>每日对单位内消防重点设备、区域进行例行检查，并按时上报检查结果</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="saveAndCancel">
+                        <span class="button">下发</span>
+                        <span class="button cancel">取消</span>
+                    </div>
+                </div>
+
+                <!--弹出层表格2-->
+                <div class="create_table2 issued hide2">
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th colspan='4'>批量下发</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>规则名称</th>
+                            <th>规则周期</th>
+                            <th>规则描述</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td>周度重要设备检查</td>
+                            <td>日度</td>
+                            <td>每日对单位内消防重点设备、区域进行例行检查，并按时上报检查结果</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>周度重要设备检查</td>
+                            <td>日度</td>
+                            <td>每日对单位内消防重点设备、区域进行例行检查，并按时上报检查结果</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>周度重要设备检查</td>
+                            <td>日度</td>
+                            <td>每日对单位内消防重点设备、区域进行例行检查，并按时上报检查结果</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="saveAndCancel">
+                        <span class="button">确定</span>
+                        <span class="button cancel">取消</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content_detail index">
+                <table class="ui very basic striped inverted padded table">
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>单位编号</th>
+                        <th>单位名称</th>
+                        <th>监管级别</th>
+                        <th>单位类型</th>
+                        <th>危险等级</th>
+                        <th class="center aligned">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    <tr class='tr'>
+                        <td><input type="checkbox"></td>
+                        <td>KTFW-01-001</td>
+                        <td>单位名称A</td>
+                        <td>一级消防重点单位</td>
+                        <td>住宅</td>
+                        <td>民用</td>
+                        <td class="center aligned">
+                            <a class="button_issued button_issued1" href="data/消防巡查日志.doc">查看已下发规则</a>
+                            <span class="button_issued button_issued2">下发规则</span>
+                        </td>
+                    </tr>
+                    <tr class='tr'>
+                        <td><input type="checkbox"></td>
+                        <td>KTFW-01-002</td>
+                        <td>单位名称B</td>
+                        <td>二级消防重点单位</td>
+                        <td>住宅</td>
+                        <td>民用</td>
+                        <td class="center aligned">
+                            <a class="button_issued button_issued1" href="data/消防巡查日志.doc">查看已下发规则</a>
+                            <span class="button_issued button_issued2">下发规则</span>
+                        </td>
+                    </tr>
+                    <tr class='tr'>
+                        <td><input type="checkbox"></td>
+                        <td>KTFW-01-003</td>
+                        <td>单位名称C</td>
+                        <td>三级消防重点单位</td>
+                        <td>商城</td>
+                        <td>民用</td>
+                        <td class="center aligned">
+                            <a class="button_issued button_issued1" href="data/消防巡查日志.doc">查看已下发规则</a>
+                            <span class="button_issued button_issued2">下发规则</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content_foot">
+                <span>上一页</span>
+                <span>1</span>
+                <span>下一页</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<!--遮罩-->
+<div class="mask hide"></div>
+
+
+<!-- <div class="banner-right banner" id="rightBanner">
+        <div class="ui inverted labeled icon right block vertical sidebar borderless menu uncover visible" data-direction="right">
+        </div>
+        </div>
+    <div class="ui attached message transition hidden right-Info-tbl">
+    </div> -->
+<script id="template" type="x-tmpl-mustache">
+</script>
+<!-- build:js -->
+<script src="libs/jquery-2.1.4.min.js"></script>
+<script src="libs/semantic/semantic.min.js"></script>
+<script src="libs/mustache.js"></script>
+<script src="libs/lodash.min.js"></script>
+<script src="js/config.js"></script>
+<!-- endbuild -->
+<script src="js/inspection/init.js"></script>
+<!--<script src="js/inspection/base.js"></script>
+<script src="js/inspection/temples.js"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>奎屯智慧消防-巡检列表</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/map.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="css/maps/plan-list.css">
+</head>
+
+<body>
+<header class="ui top">
+    <!--<div class="ui label large left">奎屯市
+        <div class="detail">2017-07-20 13:00 星期四 21~32℃ 晴 风力 1~2 级 风向 无持续风向微风</div>
+    </div>-->
+    <a class="ui label large float-right" href="index.html">返回主菜单 </a>
+</header>
+
+<div class="ui bottom container-center">
+    <div class="banner-left banner" id="leftBanner">
+        <div class="ui inverted labeled icon left block vertical sidebar borderless menu uncover visible"
+             data-direction="left">
+            <a href="inspection-rule.html" class="item" data-toggle="items" data-itemsindex="0">
+                <div class="ui segment">
+                    <h3>巡检</h3>
+                    <h3>规则</h3>
+                </div>
+            </a>
+            <a href="inspection-issued.html" class="item" data-toggle="items" data-itemsindex="1">
+                <div class="ui segment">
+                    <h3>下发</h3>
+                    <h3>规则</h3>
+                </div>
+            </a>
+            <a href="inspection-recording.html" class="item" data-toggle="items" data-itemsindex="2">
+                <div class="ui segment">
+                    <h3>巡检</h3>
+                    <h3>记录</h3>
+                </div>
+            </a>
+            <a href="inspection-statistics.html" class="item" data-toggle="items" data-itemsindex="3">
+                <div class="ui segment">
+                    <h3>巡检</h3>
+                    <h3>统计</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="banner-content" id="files-list">
+        <div class="banner-content-container">
+            <div class="content_top">
+                <div class="column search">
+                    <div class="ui inverted icon input">
+                        <input type="text" placeholder="请输入您要搜索内容的关键字" id="search">
+                        <i class="search icon" id="iconSearch"></i>
+                    </div>
+                </div>
+                <div class="column select" id="planType">
+                    <select class="ui dropdown">
+                        <option value="">请选择上报周期</option>
+                        <option value="1">日度</option>
+                        <option value="0">月度</option>
+                    </select>
+                </div>
+
+                <div class="column btn-right">
+                    <span id="button" class="id_button">创建规则</span>    
+                </div>
+
+                <!--弹出层表格-->
+                <div class="create_table rule hide">
+
+                <table>
+                    <tr>
+                        <th colspan='3'>创建规则</th>
+                    </tr>
+
+                    <tr>
+                        <td>任务名称</td>
+                        <td>|</td>
+                        <td>
+                            <input class="input" type="text" placeholder="请输入任务名">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>是否为重复任务</td>
+                        <td>|</td>
+                        <td>
+                            <label><input name="important" type="radio"><span>是</span></label>&nbsp;&nbsp;&nbsp;
+                            <label><input name="important" type="radio"><span>否</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>任务周期</td>
+                        <td>|</td>
+                        <td>
+                            <label><input name="time" type="radio"><span>日度</span></label>
+                            <label><input name="time" type="radio"><span>周度</span></label>
+                            <label><input name="time" type="radio"><span>月度</span></label>
+                            <label><input name="time" type="radio"><span>季度</span></label>
+                            <label><input name="time" type="radio"><span>年度</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>最晚提交时间</td>
+                        <td>|</td>
+                        <td>
+                            <input class="input" type="text" placeholder="请输入时间或时间区间，格式为：1:00或1:00-2:00">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>巡检设备</td>
+                        <td>|</td>
+                        <td>
+                            <label><input type="checkbox"><span>室内消火栓</span></label>
+                            <label><input type="checkbox"><span>疏散指示标识</span></label>
+                            <label><input type="checkbox"><span>温感探测器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>烟感探测器</span></label>
+                            <label><input type="checkbox"><span>手动按钮</span></label>&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>楼层显示器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>喷淋水雾碰头</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>防排烟阀</span></label>
+                            <label><input type="checkbox"><span>监控摄像头</span></label>
+                            <label><input type="checkbox"><span>红外线探头</span></label>&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>手动报警器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>防火卷帘门</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>巡检区域</td>
+                        <td>|</td>
+                        <td>
+                            <label><input type="checkbox"><span>疏散通道</span></label>&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>配电室</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>水泵房</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>其它重要区域</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>巡检强度</td>
+                        <td>|</td>
+                        <td>
+                            <label><input name="strength" type="radio"><span>高</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input name="strength" type="radio"><span>中</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input name="strength" type="radio"><span>低</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>巡检要求</td>
+                        <td>|</td>
+                        <td>
+                            <label><input type="checkbox"><span>位置打卡</span></label>&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>简报上传</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>照片上传</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>任务名称</td>
+                        <td>|</td>
+                        <td>
+                            <label><input type="checkbox"><span>室内消火栓</span></label>
+                            <label><input type="checkbox"><span>疏散指示标识</span></label>
+                            <label><input type="checkbox"><span>温感探测器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>烟感探测器</span></label>
+                            <label><input type="checkbox"><span>手动按钮</span></label>&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>楼层显示器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>喷淋水雾喷头</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>防排烟阀</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>监控摄像头</span></label>
+                            <label><input type="checkbox"><span>红外线探头</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>手动报警器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label><input type="checkbox"><span>防火卷帘门</span></label>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="upload">
+                    <span>上传巡检简报模版</span>
+                    <span>上传巡检报告模版</span>
+                </div>
+
+                <div class="saveAndCancel">
+                    <span class="button">保存</span>
+                    <span class="button cancel">取消</span>
+                </div>
+
+            </div>
+
+                <!--弹出层表格2-->
+                <div class="create_table2 rule2 hide2">
+
+                    <table>
+                        <tr>
+                            <th colspan='3'>创建规则</th>
+                        </tr>
+
+                        <tr>
+                            <td>任务名称</td>
+                            <td>|</td>
+                            <td>
+                                <input class="input" type="text" placeholder="请输入任务名">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>是否为重复任务</td>
+                            <td>|</td>
+                            <td>
+                                <label><input name="important" type="radio" checked="checked"><span>是</span></label>&nbsp;&nbsp;&nbsp;
+                                <label><input name="important" type="radio"><span>否</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>任务周期</td>
+                            <td>|</td>
+                            <td>
+                                <label><input name="time" type="radio" checked="checked"><span>日度</span></label>
+                                <label><input name="time" type="radio"><span>周度</span></label>
+                                <label><input name="time" type="radio"><span>月度</span></label>
+                                <label><input name="time" type="radio"><span>季度</span></label>
+                                <label><input name="time" type="radio"><span>年度</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>最晚提交时间</td>
+                            <td>|</td>
+                            <td>
+                                <input class="input" type="text" placeholder="请输入时间或时间区间，格式为：1:00或1:00-2:00">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>巡检设备</td>
+                            <td>|</td>
+                            <td>
+                                <label><input type="checkbox" checked="checked"><span>室内消火栓</span></label>
+                                <label><input type="checkbox" checked="checked"><span>疏散指示标识</span></label>
+                                <label><input type="checkbox" checked="checked"><span>温感探测器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>烟感探测器</span></label>
+                                <label><input type="checkbox" checked="checked"><span>手动按钮</span></label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>楼层显示器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>喷淋水雾碰头</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>防排烟阀</span></label>
+                                <label><input type="checkbox" checked="checked"><span>监控摄像头</span></label>
+                                <label><input type="checkbox" checked="checked"><span>红外线探头</span></label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>手动报警器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>防火卷帘门</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>巡检区域</td>
+                            <td>|</td>
+                            <td>
+                                <label><input type="checkbox" checked="checked"><span>疏散通道</span></label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>配电室</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>水泵房</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>其它重要区域</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>巡检强度</td>
+                            <td>|</td>
+                            <td>
+                                <label><input name="strength" type="radio" checked="checked"><span>高</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input name="strength" type="radio"><span>中</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input name="strength" type="radio"><span>低</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>巡检要求</td>
+                            <td>|</td>
+                            <td>
+                                <label><input type="checkbox" checked="checked"><span>位置打卡</span></label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>简报上传</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>照片上传</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>任务名称</td>
+                            <td>|</td>
+                            <td>
+                                <label><input type="checkbox" checked="checked"><span>室内消火栓</span></label>
+                                <label><input type="checkbox" checked="checked"><span>疏散指示标识</span></label>
+                                <label><input type="checkbox" checked="checked"><span>温感探测器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>烟感探测器</span></label>
+                                <label><input type="checkbox" checked="checked"><span>手动按钮</span></label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>楼层显示器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>喷淋水雾喷头</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>防排烟阀</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>监控摄像头</span></label>
+                                <label><input type="checkbox" checked="checked"><span>红外线探头</span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>手动报警器</span></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" checked="checked"><span>防火卷帘门</span></label>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="upload">
+                        <span>上传巡检简报模版</span>
+                        <span>上传巡检报告模版</span>
+                    </div>
+
+                    <div class="saveAndCancel">
+                        <span class="button">保存</span>
+                        <span class="button cancel">取消</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="content_detail">
+                <table class="ui very basic striped inverted padded table">
+                    <thead>
+                    <tr>
+                        <th>规则编号</th>
+                        <th>规则名称</th>
+                        <th>上报周期</th>
+                        <th>最晚提交时间</th>
+                        <th>规则描述</th>
+                        <th class="center aligned">操作</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="tbody">
+                    <!--<tr class='tr'>
+                        <td>KTFW-01-001</td>
+                        <td>日巡检</td>
+                        <td>日度</td>
+                        <td>每日18:00</td>
+                        <td>每日对单位内消防重点设备、区域进行例行检查，并按时上报检查结果</td>
+                        <td class="center aligned">
+                            <span class="button button_watch">查看</span>
+                            <span class="button">编辑</span>
+                            <span class="button">删除</span>
+                        </td>
+                    </tr>
+                    <tr class='tr'>
+                        <td>KTFW-01-002</td>
+                        <td>月巡检</td>
+                        <td>月度</td>
+                        <td>每日17:00</td>
+                        <td>每日对单位内消防重点设备、区域进行例行检查，并按时上报检查结果</td>
+                        <td class="center aligned">
+                            <span class="button button_watch">查看</span>
+                            <span class="button">编辑</span>
+                            <span class="button">删除</span>
+                        </td>
+                    </tr>
+                    <tr class='tr'>
+                        <td>KTFW-01-003</td>
+                        <td>日巡检</td>
+                        <td>日度</td>
+                        <td>每日18:00</td>
+                        <td>每日对单位内消防重点设备、区域进行例行检查，并按时上报检查结果</td>
+                        <td class="center aligned">
+                            <span class="button button_watch">查看</span>
+                            <span class="button">编辑</span>
+                            <span class="button">删除</span>
+                        </td>
+                    </tr>-->
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div class="content_foot">
+                <span>上一页</span>
+                <span>1</span>
+                <span>下一页</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--遮罩-->
+<div class="mask hide"></div>
+
+
+<!-- <div class="banner-right banner" id="rightBanner">
+        <div class="ui inverted labeled icon right block vertical sidebar borderless menu uncover visible" data-direction="right">
+        </div>
+        </div>
+    <div class="ui attached message transition hidden right-Info-tbl">
+    </div> -->
+<script id="template" type="x-tmpl-mustache">
+</script>
+<!-- build:js -->
+<script src="libs/jquery-2.1.4.min.js"></script>
+<script src="libs/semantic/semantic.min.js"></script>
+<script src="libs/mustache.js"></script>
+<script src="libs/lodash.min.js"></script>
+<script src="js/config.js"></script>
+<!-- endbuild -->
+<script src="js/inspection/init.js"></script>
+<script src="js/inspection/base.js"></script>
+<script src="js/inspection/temples.js"></script>
+</body>
+
+</html>

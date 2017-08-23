@@ -1,0 +1,238 @@
+body {
+    font-family: "Microsoft YaHei";
+    background: url(../images/contro-bg.png) no-repeat;
+    background-size: cover;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:800px) {
+    .item-list .header .item-list-title {
+        width: 112px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.item .sea-top {
+    height: 8.57rem;
+}
+
+.sea-top div {
+    color: #fff;
+}
+
+.ui.grid.sea-top {
+    margin-top: 0;
+}
+
+.item-t {
+    height: 120px;
+    padding: 0 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    min-width: 1200px;
+    overflow: hidden;
+}
+
+.sea-top .column input {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #fff;
+    outline: none;
+}
+
+.item-list.ui.grid>.column:not(.row) {
+    padding: 0rem;
+}
+
+.item-t .ui.sea-top.column:not(.row) {
+    padding-bottom: 0;
+}
+
+.ui.grid.item-m-font>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.item-m {
+    margin-top: 30px;
+}
+
+.item-m .item-m-font {
+    min-width: 1200px;
+}
+
+.item-m .column .info {
+    height: 50px;
+    background: url(../images/con-bg.png);
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.item-m .column .info marquee {
+    line-height: 50px;
+}
+
+.ui.grid+.grid.item-list {
+    padding-top: 5%;
+    margin-top: 0rem;
+}
+
+.item-list .header .item-list-title {
+    color: #fff;
+    margin-top: 13px;
+    font-weight: normal;
+}
+
+//布局样式结束
+.item-t .sea-top .column {
+    line-height: 8.57rem;
+}
+
+.item-t .sea-top .column img {
+    margin-top: 1.4rem;
+}
+
+.item-t .sea-top .sea-s {
+    text-align: center;
+    position: relative;
+    line-height: 7.3rem;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+    opacity: 0.4;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+    opacity: 0.4;
+}
+
+input:-ms-input-placeholder {
+    color: #fff;
+    opacity: 0.4;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0.4;
+}
+
+.sea-top .column .user-name {
+    font-size: 22px;
+}
+
+
+.item .content .item-plat-e {
+    font-size: 15px;
+}
+
+.sea-top .column .item .content .item-plat-c {
+    font-size: 32px;
+    font-weight: 300;
+    color: #fff;
+    margin-left: 12px;
+}
+
+.sea-top .column .item .content .item-plat-e {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.sea-top .column .list {
+    padding-top: 16px;
+}
+
+.sea-top .column .list .item img {
+    width: 48px;
+}
+
+.user-name {
+    float: right;
+    line-height: 7.57rem;
+}
+
+.item-t .sea-top .sea-top-cen.center.aligned {
+    padding-top: 24px;
+}
+
+.sea-top .sea-top-cen input {
+    background-color: rgba(0, 0, 0, 0);
+    width: 340px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+
+//头部样式结束
+.item-m .item-list .row-co-one p {
+    position: relative;
+}
+
+.item-m .ui.grid {
+    margin-left: 0;
+    margin: 0;
+}
+
+.item-m .item-list .row-co {
+    padding-top: 0rem;
+}
+
+.item-list .col-bc:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+
+}
+
+.item-list .col-bc {
+    background-color: rgba(0, 0, 0, 0.2);
+    max-width: 190px;
+    max-height: 190px;
+    transition: background 1s;
+    -moz-transition: background 1s; /* Firefox 4 */
+    -webkit-transition: background 1s; /* Safari 和 Chrome */
+}
+
+.item-m .item-list .col-bc .header {
+    margin: 28px;
+}
+
+.item-list .col-bc .header span {
+    font-weight: normal;
+    font-size: 22px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+
+.sea-top .sea-top-cen img {
+    margin-right: -28px;
+    width: 19px;
+}
+
+.item-m .item-list .column {
+    margin: 8px;
+}
+
+
+.ui.grid.container.item-list {
+    width: calc(1004px + 2rem)!important;
+}
+
+.item-action {
+    margin: 0 auto;
+}

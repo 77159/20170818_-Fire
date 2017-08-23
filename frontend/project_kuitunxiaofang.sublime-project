@@ -1,0 +1,32 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.sublime*",
+				"*.zip",
+				"*.rar",
+			],
+			"folder_exclude_patterns":
+			[
+				"node_modules",
+				"misc",
+				".*",
+				"*.rar",
+				"*.zip",
+				"doc",
+				"dist"
+			],
+			"path": "."
+		}
+	],
+	"ternjs":
+	{
+		"exclude":
+		[
+			"node_modules/**",
+			"**/*.min.js"
+		]
+	}
+}

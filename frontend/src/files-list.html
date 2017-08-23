@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>奎屯智慧消防-巡检列表</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="libs/semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="css/maps/map.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="css/maps/plan-list.css">
+</head>
+
+<body>
+    <header class="ui top">
+        <div class="ui label large left">奎屯市
+            <div class="detail">2017-07-20 13:00 星期四 21~32℃ 晴 风力 1~2 级 风向 无持续风向微风</div>
+        </div>
+        <a class="ui label large float-right">返回主菜单 </a>
+    </header>
+    <div class="ui bottom container-center">
+        <div class="banner-left banner" id="leftBanner">
+            <div class="ui inverted labeled icon left block vertical sidebar borderless menu uncover visible" data-direction="left">
+                <a class="item" data-toggle="items" data-itemsindex="0">
+                    <div class="ui segment">
+                        <h3>巡检</h3>
+                        <h3>规则</h3>
+                    </div>
+                </a>
+                <a class="item" data-toggle="items" data-itemsindex="1">
+                    <div class="ui segment">
+                        <h3>下发</h3>
+                        <h3>规则</h3>
+                    </div>
+                </a>
+                <a class="item" data-toggle="items" data-itemsindex="2">
+                    <div class="ui segment">
+                        <h3>巡检</h3>
+                        <h3>记录</h3>
+                    </div>
+                </a>
+                <a class="item" data-toggle="items" data-itemsindex="3">
+                    <div class="ui segment">
+                        <h3>巡检</h3>
+                        <h3>统计</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="banner-content" id="files-list">
+            <div class="banner-content-container">
+                <div class="content_top">
+                    <div class="column search">
+                        <div class="ui inverted icon input">
+                            <input type="text" placeholder="请输入您要搜索内容的关键字" id="search">
+                            <i class="search icon" id="iconSearch"></i>
+                        </div>
+                    </div>
+                    <div class="column select" id="planType">
+                        <select class="ui dropdown">
+                            <option value="">请选择任务编号</option>
+                            <option value="1">M0100101</option>
+                            <option value="0">M0100102</option>
+                        </select>
+                    </div>
+                    <div class="column select" id="caseType">
+                        <select class="ui dropdown">
+                            <option value="">请选择任务周期</option>
+                            <option value="0">日度</option>
+                            <option value="0">月度</option>
+                        </select>
+                    </div>
+                    <div class="column select" id="makeDate">
+                        <select class="ui dropdown">
+                            <option value="">请选择完成度</option>
+                            <option value="1">已完成</option>
+                            <option value="0">未完成</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="content_detail">
+                    <table class="ui very basic striped inverted padded table">
+                        <thead>
+                            <tr>                               
+                                <th>任务编号</th>
+                                <th>任务周期</th>
+                                <th>执行编号</th>
+                                <th>单位名称</th>
+                                <th>巡检人</th>
+                                <th>上报时间</th>
+                                <th>完成度</th>
+                                <th class="center aligned">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <tr class='tr'>
+                                <td>KTFW-01-001</td>
+                                <td>日度</td>
+                                <td>M0100101</td>
+                                <td>奎屯友好时尚购物中心</td>
+                                <td>马新民</td>
+                                <td>2017.7.30 14:00</td>
+                                <td>已完成</td>
+                                <td class="center aligned">
+                                <button class="ui button">下载巡检报告</button>
+                                <button class="ui button">查看详细记录</button>
+                                </td>
+                            </tr>
+                            <tr class='tr'>
+                                <td>KTFW-01-001</td>
+                                <td>日度</td>
+                                <td>M0100101</td>
+                                <td>奎屯友好时尚购物中心</td>
+                                <td>马新民</td>
+                                <td>2017.7.30 14:00</td>
+                                <td class="td-yellow">未完成</td>
+                                <td class="center aligned">
+                                <button class="ui button">下载巡检报告</button>
+                                <button class="ui button">查看详细记录</button>
+                                </td>
+                            </tr>
+                            <tr class='tr'>
+                                <td>KTFW-01-001</td>
+                                <td>日度</td>
+                                <td>M0100101</td>
+                                <td>奎屯友好时尚购物中心</td>
+                                <td>马新民</td>
+                                <td>2017.7.30 14:00</td>
+                                <td>已完成</td>
+                                <td class="center aligned">
+                                <button class="ui button">下载巡检报告</button>
+                                <button class="ui button">查看详细记录</button>
+                                </td>
+                            </tr>
+                            <tr class='tr'>
+                                <td>KTFW-01-001</td>
+                                <td>日度</td>
+                                <td>M0100101</td>
+                                <td>奎屯友好时尚购物中心</td>
+                                <td>马新民</td>
+                                <td>2017.7.30 14:00</td>
+                                <td class="td-yellow">未完成</td>
+                                <td class="center aligned">
+                                <button class="ui button">下载巡检报告</button>
+                                <button class="ui button">查看详细记录</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="banner-right banner" id="rightBanner">
+            <div class="ui inverted labeled icon right block vertical sidebar borderless menu uncover visible" data-direction="right">
+            </div>
+            </div>
+        <div class="ui attached message transition hidden right-Info-tbl">
+        </div> -->
+    <script id="template" type="x-tmpl-mustache">
+    </script>
+    <!-- build:js -->
+    <script src="libs/jquery-2.1.4.min.js"></script>
+    <script src="libs/semantic/semantic.min.js"></script>
+    <script src="libs/mustache.js"></script>
+    <script src="libs/lodash.min.js"></script>
+    <script src="js/config.js"></script>
+    <!-- endbuild -->
+    <script src="js/files/records/init.js"></script>
+</body>
+
+</html>
